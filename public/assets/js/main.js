@@ -1282,39 +1282,4 @@
       scrollTop: 0
     }, 500)
   });
-
-
-
-
-  $(document).ready(function () {
-    // Lightbox Modal for Working Process Mockups
-    $('.working-process-wrapper .image-area img').css('cursor', 'pointer');
-    
-    $('.working-process-wrapper .image-area img').on('click', function () {
-      var src = $(this).attr('src');
-      // Create full image path: e.g., '01.jpg' -> 'full-01.jpg'
-      var filename = src.substring(src.lastIndexOf('/') + 1);
-      var fullSrc = src.replace(filename, 'full-' + filename);
-      
-      var modalHtml = `
-        <div id="mockup-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999999; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; overflow-y: auto; overflow-x: hidden;">
-          <div style="width: 100%; max-width: 1000px; position: relative; margin-top: 50px; margin-bottom: 50px;">
-            <button id="close-mockup-modal" style="position: absolute; top: -40px; right: 0; background: none; border: none; color: #fff; font-size: 40px; cursor: pointer; z-index: 1000000; line-height: 1;">&times;</button>
-            <img src="${fullSrc}" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" alt="Full Mockup">
-          </div>
-        </div>
-      `;
-      
-      $('body').append(modalHtml);
-      $('body').css('overflow', 'hidden'); // Prevent background scrolling
-      
-      $('#close-mockup-modal, #mockup-modal').on('click', function (e) {
-        if (e.target.id === 'mockup-modal' || e.target.id === 'close-mockup-modal') {
-          $('#mockup-modal').remove();
-          $('body').css('overflow', '');
-        }
-      });
-    });
-  });
-
 })(jQuery, window)  
