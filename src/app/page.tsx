@@ -494,7 +494,7 @@ export default function Page() {
     <!-- wpr services area end -->
 
     <!-- wpr project area start -->
-    <section id="works" class="wpr-project-area mb--16">
+    <!-- <section id="works" class="wpr-project-area mb--16">
         <div class="container">
             <div class="section-inner border-1">
                 <div class="space"></div>
@@ -668,7 +668,7 @@ export default function Page() {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- wpr project area end -->
 
     <!-- wpr working process area start -->
