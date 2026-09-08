@@ -237,10 +237,8 @@ body {
 
 .portfolio-categories {
   display: flex;
+  flex-wrap: wrap;
   gap: 9px;
-  overflow-x: auto;
-  padding-bottom: 3px;
-  scrollbar-width: thin;
 }
 
 .portfolio-categories button {
@@ -285,10 +283,85 @@ body {
   color: var(--portfolio-muted);
 }
 
+.portfolio-results-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.portfolio-layout-switcher {
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid rgba(7, 17, 31, 0.12);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.portfolio-layout-switcher button {
+  display: grid;
+  width: 38px;
+  height: 34px;
+  padding: 8px;
+  border: 0;
+  border-radius: 7px;
+  color: #667085;
+  background: transparent;
+  cursor: pointer;
+  place-items: center;
+}
+
+.portfolio-layout-switcher button:hover,
+.portfolio-layout-switcher button.active {
+  color: #fff;
+  background: var(--portfolio-ink);
+}
+
+.portfolio-layout-switcher svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 48px 28px;
+}
+
+.portfolio-layout-compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px 20px;
+}
+
+.portfolio-layout-compact .portfolio-card-content h2 {
+  font-size: clamp(19px, 1.7vw, 26px);
+}
+
+.portfolio-layout-list {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.portfolio-layout-list .portfolio-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 32%) 1fr;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(7, 17, 31, 0.1);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.portfolio-layout-list .portfolio-card-image {
+  width: 100%;
+  border-radius: 0;
+}
+
+.portfolio-layout-list .portfolio-card-content {
+  padding: 28px 36px;
 }
 
 .portfolio-card {
@@ -440,6 +513,38 @@ body {
   .portfolio-grid {
     grid-template-columns: 1fr;
     gap: 38px;
+  }
+
+  .portfolio-layout-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 14px;
+  }
+
+  .portfolio-results-heading {
+    align-items: flex-end;
+  }
+
+  .portfolio-results-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .portfolio-layout-list .portfolio-card {
+    grid-template-columns: 42% 1fr;
+    border-radius: 13px;
+  }
+
+  .portfolio-layout-list .portfolio-card-content {
+    padding: 18px;
+  }
+
+  .portfolio-layout-list .portfolio-card-content h2 {
+    font-size: clamp(18px, 5vw, 24px);
+  }
+
+  .portfolio-layout-list .portfolio-card-content p {
+    font-size: 10px;
   }
 
   .portfolio-card-image {

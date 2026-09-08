@@ -17,6 +17,7 @@ const categories = [
 ] as const;
 
 type Category = (typeof categories)[number];
+type Layout = "grid" | "compact" | "list";
 
 type Project = {
   number: number;
@@ -99,6 +100,7 @@ const projects: Project[] = [
 export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [query, setQuery] = useState("");
+  const [layout, setLayout] = useState<Layout>("grid");
 
   const filteredProjects = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -149,11 +151,45 @@ export default function PortfolioGallery() {
 
       <div className="portfolio-results-heading" aria-live="polite">
         <p>{filteredProjects.length} {filteredProjects.length === 1 ? "project" : "projects"}</p>
-        <span>{activeCategory === "All" ? "All categories" : activeCategory}</span>
+        <div className="portfolio-results-actions">
+          <span>{activeCategory === "All" ? "All categories" : activeCategory}</span>
+          <div className="portfolio-layout-switcher" role="group" aria-label="Choose portfolio layout">
+            <button
+              type="button"
+              className={layout === "grid" ? "active" : ""}
+              onClick={() => setLayout("grid")}
+              aria-label="Comfortable grid"
+              aria-pressed={layout === "grid"}
+              title="Comfortable grid"
+            >
+              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="2" width="6" height="6" rx="1" /><rect x="12" y="2" width="6" height="6" rx="1" /><rect x="2" y="12" width="6" height="6" rx="1" /><rect x="12" y="12" width="6" height="6" rx="1" /></svg>
+            </button>
+            <button
+              type="button"
+              className={layout === "compact" ? "active" : ""}
+              onClick={() => setLayout("compact")}
+              aria-label="Compact grid"
+              aria-pressed={layout === "compact"}
+              title="Compact grid"
+            >
+              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="1.5" y="2" width="4" height="6" rx=".7" /><rect x="8" y="2" width="4" height="6" rx=".7" /><rect x="14.5" y="2" width="4" height="6" rx=".7" /><rect x="1.5" y="12" width="4" height="6" rx=".7" /><rect x="8" y="12" width="4" height="6" rx=".7" /><rect x="14.5" y="12" width="4" height="6" rx=".7" /></svg>
+            </button>
+            <button
+              type="button"
+              className={layout === "list" ? "active" : ""}
+              onClick={() => setLayout("list")}
+              aria-label="List view"
+              aria-pressed={layout === "list"}
+              title="List view"
+            >
+              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="3" width="5" height="5" rx="1" /><path d="M10 5.5h8M10 14.5h8" /><rect x="2" y="12" width="5" height="5" rx="1" /></svg>
+            </button>
+          </div>
+        </div>
       </div>
 
       {filteredProjects.length > 0 ? (
-        <div className="portfolio-grid">
+        <div className={`portfolio-grid portfolio-layout-${layout}`}>
           {filteredProjects.map((project, index) => {
             const card = (
               <>
