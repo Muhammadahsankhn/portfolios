@@ -6,14 +6,14 @@ import { useMemo, useState } from "react";
 
 const categories = [
   "All",
-  "Business",
-  "Finance",
-  "E-commerce",
-  "Luxury",
+  "AI & Business Automation",
   "Healthcare",
-  "Education",
   "Real Estate",
-  "Technology",
+  "Financial Services",
+  "Cybersecurity",
+  "E-commerce",
+  "Education & E-Learning",
+  "SaaS and Software",
 ] as const;
 
 type Category = (typeof categories)[number];
@@ -26,33 +26,70 @@ type Project = {
   keywords: string[];
 };
 
-// Add new portfolio thumbnails here as they are placed in /public/assets/images/working-process.
+const thumbnail = (number: number) =>
+  `/assets/images/working-process/${String(number).padStart(2, "0")}.jpg`;
+
 const projects: Project[] = [
   {
     title: "Intelligent Business Solutions",
-    category: "Business",
-    image: "/assets/images/working-process/01.jpg",
+    category: "AI & Business Automation",
+    image: thumbnail(1),
     href: "/works/intelligent-business-solutions",
-    keywords: ["consulting", "corporate", "professional", "blue"],
+    keywords: ["consulting", "corporate", "automation", "business"],
   },
   {
     title: "Capitalink Advisory",
-    category: "Finance",
-    image: "/assets/images/working-process/02.jpg",
+    category: "Financial Services",
+    image: thumbnail(2),
     keywords: ["capital", "advisory", "investment", "financial"],
   },
   {
     title: "Indiana Menswear",
     category: "E-commerce",
-    image: "/assets/images/working-process/03.jpg",
+    image: thumbnail(3),
     keywords: ["fashion", "store", "shopping", "menswear"],
   },
   {
     title: "LuxaWatch",
-    category: "Luxury",
-    image: "/assets/images/working-process/04.jpg",
+    category: "E-commerce",
+    image: thumbnail(4),
     keywords: ["watch", "premium", "fashion", "retail"],
   },
+  { title: "Havenly Real Estate", category: "Real Estate", image: thumbnail(5), keywords: ["property", "homes", "luxury", "realtor"] },
+  { title: "Lawfir Financial Law", category: "Financial Services", image: thumbnail(6), keywords: ["legal", "tax", "finance", "law"] },
+  { title: "Havenly Properties", category: "Real Estate", image: thumbnail(7), keywords: ["property", "homes", "realtor"] },
+  { title: "Keyville Real Estate", category: "Real Estate", image: thumbnail(8), keywords: ["property", "rentals", "sales", "investment"] },
+  { title: "Synaptic AI Automation", category: "AI & Business Automation", image: thumbnail(9), keywords: ["ai", "workflow", "automation", "agents"] },
+  { title: "Novaridge Realty", category: "Real Estate", image: thumbnail(10), keywords: ["property", "realtor", "commercial"] },
+  { title: "Finance & Accounting Partner", category: "Financial Services", image: thumbnail(11), keywords: ["accounting", "finance", "business"] },
+  { title: "Workflow Automation Platform", category: "AI & Business Automation", image: thumbnail(12), keywords: ["workflow", "automation", "teams", "ai"] },
+  { title: "Housen Realty", category: "Real Estate", image: thumbnail(13), keywords: ["property", "homes", "realtor"] },
+  { title: "Zenvault Financial", category: "Financial Services", image: thumbnail(14), keywords: ["fintech", "banking", "wealth", "ai"] },
+  { title: "Aivora AI Platform", category: "AI & Business Automation", image: thumbnail(15), keywords: ["ai", "automation", "no code", "insights"] },
+  { title: "Estara Properties", category: "Real Estate", image: thumbnail(16), keywords: ["property", "homes", "luxury", "realtor"] },
+  { title: "Softluxe Business Software", category: "SaaS and Software", image: thumbnail(17), keywords: ["software", "crm", "business", "saas"] },
+  { title: "Nekku Sneakers", category: "E-commerce", image: thumbnail(18), keywords: ["shoes", "fashion", "store", "shopping"] },
+  { title: "Vestara Fashion", category: "E-commerce", image: thumbnail(19), keywords: ["fashion", "clothing", "store", "shopping"] },
+  { title: "Aurele Jewelry", category: "E-commerce", image: thumbnail(20), keywords: ["jewelry", "luxury", "rings", "store"] },
+  { title: "Synaptic AI Systems", category: "AI & Business Automation", image: thumbnail(21), keywords: ["ai", "workflow", "automation", "agents"] },
+  { title: "Classmont Academy", category: "Education & E-Learning", image: thumbnail(22), keywords: ["academy", "courses", "students", "learning"] },
+  { title: "Giant Accounting", category: "Financial Services", image: thumbnail(23), keywords: ["accounting", "bookkeeping", "small business"] },
+  { title: "Clandestine Healthcare", category: "Healthcare", image: thumbnail(24), keywords: ["hospital", "doctor", "patient", "medical"] },
+  { title: "Horizon High School", category: "Education & E-Learning", image: thumbnail(25), keywords: ["school", "students", "academy", "education"] },
+  { title: "Flowbase Project Management", category: "SaaS and Software", image: thumbnail(26), keywords: ["saas", "software", "projects", "teams"] },
+  { title: "Dime Medical Care", category: "Healthcare", image: thumbnail(27), keywords: ["hospital", "cardiology", "medical", "family"] },
+  { title: "DoctorPro", category: "Healthcare", image: thumbnail(28), keywords: ["doctor", "appointment", "family medicine"] },
+  { title: "Edulift Learning", category: "Education & E-Learning", image: thumbnail(29), keywords: ["education", "library", "online study"] },
+  { title: "Fabels Financial Advisory", category: "Financial Services", image: thumbnail(30), keywords: ["finance", "wealth", "advisor", "investment"] },
+  { title: "Care Telemedicine", category: "Healthcare", image: thumbnail(31), keywords: ["telemedicine", "medical", "doctors", "care"] },
+  { title: "Health & Fitness Coaching", category: "Healthcare", image: thumbnail(32), keywords: ["fitness", "coaching", "wellness", "training"] },
+  { title: "Learnly AI Education", category: "Education & E-Learning", image: thumbnail(33), keywords: ["ai", "learning", "study", "education"] },
+  { title: "Learnova E-Courses", category: "Education & E-Learning", image: thumbnail(34), keywords: ["courses", "online", "learning", "students"] },
+  { title: "Cybrexis Security", category: "Cybersecurity", image: thumbnail(35), keywords: ["security", "threat detection", "enterprise", "ai"] },
+  { title: "Defeny Cybersecurity", category: "Cybersecurity", image: thumbnail(36), keywords: ["security", "protection", "cloud", "network"] },
+  { title: "Securo Enterprise Security", category: "Cybersecurity", image: thumbnail(37), keywords: ["cyber protection", "security", "encryption"] },
+  { title: "Cryptara Security", category: "Cybersecurity", image: thumbnail(38), keywords: ["security", "digital", "data", "cyberattacks"] },
+  { title: "Cybersecurity Defense", category: "Cybersecurity", image: thumbnail(39), keywords: ["managed security", "defense", "threat", "cyber"] },
 ];
 
 export default function PortfolioGallery() {
