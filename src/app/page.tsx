@@ -686,7 +686,7 @@ export default function Page() {
                             </div>
                             <div class="text-area">
                                 <p class="desc">Every step designed to deliver clarity, impact, and results.</p>
-                                <a href="#" class="wpr-btn btn-primary with-icon">
+                                <a href="/portfolio" class="wpr-btn btn-primary with-icon">
                                     <div class="inner">
                                         <div class="icon">
                                             <span class="fixed-arrow">
@@ -706,7 +706,7 @@ export default function Page() {
                                             </span>
                                         </div>
                                     </div>
-                                    Start a Project
+                                    Explore All Projects
                                 </a>
                             </div>
                         </div>
