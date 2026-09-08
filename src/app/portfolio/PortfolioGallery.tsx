@@ -190,16 +190,6 @@ export default function PortfolioGallery() {
           <div className="portfolio-layout-switcher" role="group" aria-label="Choose portfolio layout">
             <button
               type="button"
-              className={layout === "grid" ? "active" : ""}
-              onClick={() => setLayout("grid")}
-              aria-label="Comfortable grid"
-              aria-pressed={layout === "grid"}
-              title="Comfortable grid"
-            >
-              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="2" width="6" height="6" rx="1" /><rect x="12" y="2" width="6" height="6" rx="1" /><rect x="2" y="12" width="6" height="6" rx="1" /><rect x="12" y="12" width="6" height="6" rx="1" /></svg>
-            </button>
-            <button
-              type="button"
               className={layout === "compact" ? "active" : ""}
               onClick={() => setLayout("compact")}
               aria-label="Compact grid"
@@ -207,6 +197,16 @@ export default function PortfolioGallery() {
               title="Compact grid"
             >
               <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="1.5" y="2" width="4" height="6" rx=".7" /><rect x="8" y="2" width="4" height="6" rx=".7" /><rect x="14.5" y="2" width="4" height="6" rx=".7" /><rect x="1.5" y="12" width="4" height="6" rx=".7" /><rect x="8" y="12" width="4" height="6" rx=".7" /><rect x="14.5" y="12" width="4" height="6" rx=".7" /></svg>
+            </button>
+            <button
+              type="button"
+              className={layout === "grid" ? "active" : ""}
+              onClick={() => setLayout("grid")}
+              aria-label="Comfortable grid"
+              aria-pressed={layout === "grid"}
+              title="Comfortable grid"
+            >
+              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="2" width="6" height="6" rx="1" /><rect x="12" y="2" width="6" height="6" rx="1" /><rect x="2" y="12" width="6" height="6" rx="1" /><rect x="12" y="12" width="6" height="6" rx="1" /></svg>
             </button>
             <button
               type="button"
