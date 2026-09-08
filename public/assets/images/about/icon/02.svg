@@ -1,5 +1,6 @@
 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="72" height="72" rx="8" fill="url(#paint0_linear_77_29733)"/>
+<style>[fill="#005D74"]:not(rect) { fill: #FFFFFF; }</style>
+<rect width="72" height="72" rx="8" fill="#005D74"/>
 <circle cx="30.4" cy="41.6002" r="1.40002" fill="#005D74"/>
 <circle cx="30.4" cy="37.4" r="1.40002" fill="#005D74"/>
 <circle cx="33.1998" cy="34.6002" r="1.40002" fill="#005D74"/>

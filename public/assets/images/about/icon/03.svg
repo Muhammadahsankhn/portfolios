@@ -1,5 +1,6 @@
 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="72" height="72" rx="8" fill="url(#paint0_linear_77_29751)"/>
+<style>[fill="#005D74"]:not(rect) { fill: #FFFFFF; }</style>
+<rect width="72" height="72" rx="8" fill="#005D74"/>
 <ellipse cx="38.0264" cy="22.6216" rx="1.62157" ry="1.62158" transform="rotate(180 38.0264 22.6216)" fill="#005D74"/>
 <ellipse cx="33.5674" cy="49.3794" rx="1.62157" ry="1.62158" fill="#005D74"/>
 <ellipse cx="33.1616" cy="22.6216" rx="1.62157" ry="1.62158" transform="rotate(180 33.1616 22.6216)" fill="#005D74"/>
