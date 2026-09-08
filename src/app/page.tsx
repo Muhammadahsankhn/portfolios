@@ -333,7 +333,7 @@ export default function Page() {
                     </div>
                     <div class="right-area">
                         <div class="image-area about-team-photo-wrap">
-                            <img class="about-team-photo" src="/assets/images/about/business-team-strategy.jpg" width="1917" height="1279" alt="Business team discussing strategy during a meeting">
+                            <img class="about-team-photo" src="/assets/images/about/business-team-strategy.jpg" width="1203" height="749" alt="Business team discussing strategy during a meeting">
                             <img class="image-shape-right-bottom" src="/assets/images/about/shape-01.svg" alt="">
                         </div>
                     </div>
