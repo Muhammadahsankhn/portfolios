@@ -111,6 +111,17 @@ body {
   background: #005d74;
 }
 
+/* Keep the main navigation sticky while allowing the announcement bar to scroll away. */
+.site-sticky-header {
+  top: -30px !important;
+}
+
+@media (max-width: 576px) {
+  .site-sticky-header {
+    top: 0 !important;
+  }
+}
+
 /* Searchable portfolio archive */
 .portfolio-page {
   --portfolio-ink: #07111f;

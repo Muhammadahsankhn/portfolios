@@ -40,7 +40,7 @@ export default function Page() {
     </div>
     <!-- /Preload -->
     <!-- header area start -->
-    <header class="header-style-one" style="position: sticky; top: 0; z-index: 1000; background-color: var(--color-white, #ffffff); border-bottom: 1px solid #eaeaea;">
+    <header class="header-style-one site-sticky-header" style="position: sticky; top: 0; z-index: 1000; background-color: var(--color-white, #ffffff); border-bottom: 1px solid #eaeaea;">
         <div class="header-top">
             <div class="header-top-inner">
                 <div class="left-icon"><img src="/assets/images/icon/green-left.svg" alt=""></div>
@@ -906,7 +906,7 @@ export default function Page() {
                                     <div class="col-lg-6 col-md-6">
                                         <div class="why-choose-wrapper">
                                             <div class="wrapper-header two">
-                                                <div class="logo"><img src="/assets/images/why-choose/logo-01-hq.svg" width="160" alt=""></div>
+                                                <div class="logo"><img src="/assets/images/logo/header-logo.png" width="160" alt=""></div>
                                                 <img src="/assets/images/why-choose/grid.svg" alt="" class="shape">
                                             </div>
                                             <ul class="wrapper-list two">
