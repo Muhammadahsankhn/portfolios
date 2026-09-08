@@ -27,6 +27,17 @@ type Project = {
   keywords: string[];
 };
 
+const categorySearchTerms: Record<Exclude<Category, "All">, string[]> = {
+  "AI & Business Automation": ["artificial intelligence", "machine learning", "workflow", "business automation"],
+  Healthcare: ["health", "medical", "clinic", "doctor", "wellness"],
+  "Real Estate": ["property", "properties", "realty", "homes", "realtor"],
+  "Financial Services": ["finance", "financial", "fintech", "banking", "accounting", "investment"],
+  Cybersecurity: ["cyber", "security", "data protection", "network"],
+  "E-commerce": ["ecommerce", "online store", "shopping", "retail", "products"],
+  "Education & E-Learning": ["education", "elearning", "online learning", "school", "academy", "courses"],
+  "SaaS and Software": ["saas", "software", "platform", "application", "app"],
+};
+
 const thumbnail = (number: number) =>
   `/assets/images/working-process/${String(number).padStart(2, "0")}.jpg`;
 
@@ -104,13 +115,23 @@ export default function PortfolioGallery() {
 
   const filteredProjects = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
+    const searchTerms = normalizedQuery.split(/\s+/).filter(Boolean);
 
     return projects.filter((project) => {
       const matchesCategory = activeCategory === "All" || project.category === activeCategory;
-      const searchableText = [project.title, project.category, ...project.keywords]
+      const projectId = String(project.number).padStart(2, "0");
+      const searchableText = [
+        project.title,
+        project.category,
+        ...project.keywords,
+        ...categorySearchTerms[project.category],
+        projectId,
+        `project ${project.number}`,
+        `portfolio ${project.number}`,
+      ]
         .join(" ")
         .toLowerCase();
-      const matchesSearch = !normalizedQuery || searchableText.includes(normalizedQuery);
+      const matchesSearch = searchTerms.length === 0 || searchTerms.every((term) => searchableText.includes(term));
 
       return matchesCategory && matchesSearch;
     });
