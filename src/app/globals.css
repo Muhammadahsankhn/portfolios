@@ -1,0 +1,103 @@
+/*
+ * The DigiCareHouse theme owns the global design system.  Importing Tailwind's
+ * preflight here reset the template's headings, links, lists and form controls,
+ * so this file intentionally contains only integration-level fallbacks.
+ */
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes pendulum {
+  0% { transform: translateX(15px); }
+  50% { transform: translateX(-15px); }
+  100% { transform: translateX(15px); }
+}
+
+.pendulum-animation {
+  display: inline-block;
+  transform-origin: top center;
+  animation: pendulum 3s ease-in-out infinite;
+}
+
+/* Custom Button Styles from Figma */
+.wpr-btn {
+  border-radius: 12px !important;
+}
+
+.wpr-btn.btn-primary {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #00686F 0%, #002639 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 10px 20px -5px rgba(0, 38, 57, 0.5) !important;
+  transition: all 0.3s ease !important;
+}
+
+.wpr-btn.btn-primary:hover {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #007A82 0%, #00334D 100%) !important;
+  box-shadow: 0px 12px 25px -5px rgba(0, 38, 57, 0.6) !important;
+  transform: translateY(-2px);
+}
+
+@keyframes seamless-marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.wpr-brand-area .right-marquee-area .brand-inner {
+  animation: seamless-marquee 20s linear infinite !important;
+  width: max-content !important;
+}
+
+.wpr-brand-area .right-marquee-area .brand-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 30px !important;
+  width: 240px !important;
+}
+
+.wpr-brand-area .right-marquee-area .brand-wrapper img {
+  max-width: 100% !important;
+  max-height: 100px !important;
+  object-fit: contain !important;
+}
+
+/* Constrain header logo size */
+.logo-area .logo img {
+  max-height: 35px !important;
+  width: auto !important;
+}
+
+/* Clickable website mockups and their full-page preview route */
+.fullpage-mockup-link {
+  display: block;
+  cursor: zoom-in;
+}
+
+.fullpage-mockup-link img {
+  display: block;
+  width: 100%;
+}
+
+.fullpage-project-preview {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+.fullpage-project-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}

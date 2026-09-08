@@ -1,0 +1,1045 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us - DigiCareHouse",
+  description: "Your Ultimate Solution for Creative Agency",
+};
+
+export default function Page() {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: `<!-- Preload -->
+    <div class="preloader overflow-hidden">
+        <div class="site-name"><span>DIGICAREHOUSE</span></div>
+        <div class="preloader-gutters">
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+            <div class="bar">
+                <div class="inner-bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Preload -->
+    <!-- header area start -->
+    <div class="header-top">
+            <div class="header-top-inner">
+                <div class="left-icon"><img src="/assets/images/icon/green-left.svg" alt=""></div>
+                <p class="text">WE ARE AVAILABLE FOR <span>DECEMBER PROJECTS</span></p>
+                <div class="right-icon"><img src="/assets/images/icon/green-right.svg" alt=""></div>
+            </div>
+    <header class="header-style-one header--sticky">
+        </div>
+        <div class="container">
+            <div class="header-style-one-wrapper">
+                <div class="left-area square-dot">
+                    <div class="logo-area">
+                        <a href="/" class="logo">
+                            <img src="/assets/images/logo/header-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+                <nav class="main-nav-area">
+                    <ul class="list-unstyled wpr-desktop-menu">
+                        <li class="menu-item">
+                            <a class="main-element wpr-dropdown-main-element" href="/">HOME</a>
+                        </li>
+                        <li class="menu-item active"><a class="main-element" href="/about">ABOUT US</a></li>
+                        <li class="menu-item has-dropdown">
+                            <a class="main-element wpr-dropdown-main-element" href="/services">SERVICES</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="/services" class="item-link link1">SERVICE</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="/services/details" class="item-link link1">SERVICES SINGLE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-dropdown">
+                            <a class="main-element wpr-dropdown-main-element" href="/works">WORKS</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="/works" class="item-link link1">WORKS</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="/works/details" class="item-link link1">WORK SINGLE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-dropdown">
+                            <a class="main-element wpr-dropdown-main-element" href="/works">BLOG</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="/blog" class="item-link link1">BLOG STANDARD</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="/blog/two-columns" class="item-link link1">BLOG GRID 2</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="/blog/three-columns" class="item-link link1">BLOG GRID 3</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="/blog/single" class="item-link link1">BLOG SINGLE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a class="main-element wpr-dropdown-main-element" href="/contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="button-area-start square-dot">
+                    <a href="#contact" class="wpr-btn btn-primary">
+                        Start a Project
+                    </a>
+                    <div class="menu-btn d-flex d-lg-none d-md-flex d-sm-flex" id="menu-btn">
+                        <span class="line one"></span>
+                        <span class="line two"></span>
+                    </div>
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+                <div id="side-bar" class="side-bar">
+                    <div class="sidebar-inner">
+                        <!-- mobile menu area start -->
+                        <div class="mobile-menu-main">
+                            <nav class="nav-main mainmenu-nav">
+                                <ul class="list-unstyled wpr-desktop-menu" id="mobile-menu">
+
+                                    <!-- HOME -->
+                                    <li class="menu-item">
+                                        <a class="main-element" href="/">HOME</a>
+                                    </li>
+
+                                    <!-- ABOUT -->
+                                    <li class="menu-item">
+                                        <a class="main-element" href="/about">ABOUT US</a>
+                                    </li>
+
+                                    <!-- SERVICES -->
+                                    <li class="menu-item">
+                                        <button class="main-element collapsed w-100 text-start bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#serviceMenu" aria-expanded="false" aria-controls="serviceMenu">
+                                            SERVICES
+                                        </button>
+
+                                        <ul id="serviceMenu" class="collapse list-unstyled ps-3" data-bs-parent="#mobile-menu">
+
+                                            <li><a href="/services" class="sub-menu">Services</a></li>
+                                            <li><a href="/services/details" class="sub-menu">Service Details</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- PROJECTS -->
+                                    <li class="menu-item">
+                                        <button class="main-element collapsed w-100 text-start bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#workMenu" aria-expanded="false" aria-controls="workMenu">
+                                            WORKS
+                                        </button>
+
+                                        <ul id="workMenu" class="collapse list-unstyled ps-3" data-bs-parent="#mobile-menu">
+
+                                            <li><a href="/works" class="sub-menu">WORKS</a></li>
+                                            <li><a href="/works/details" class="sub-menu">WORK SINGLE</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- PROJECTS -->
+                                    <li class="menu-item">
+                                        <button class="main-element collapsed w-100 text-start bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#blogMenu" aria-expanded="false" aria-controls="blogMenu">
+                                            BLOG
+                                        </button>
+
+                                        <ul id="blogMenu" class="collapse list-unstyled ps-3" data-bs-parent="#mobile-menu">
+                                            <li><a href="/blog" class="sub-menu">BLOG STANDARD</a></li>
+                                            <li><a href="/blog/two-columns" class="sub-menu">BLOG GRID 2</a></li>
+                                            <li><a href="/blog/three-columns" class="sub-menu">BLOG GRID 3</a></li>
+                                            <li><a href="/blog/single" class="sub-menu">BLOG SINGLE</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- CONTACT -->
+                                    <li class="menu-item">
+                                        <a class="main-element" href="/contact">CONTACT</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- mobile menu area end -->
+                        <div class="button-area">
+                            <a href="/contact" class="wpr-btn btn-primary">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- wpr banner area start -->
+    <section class="wpr-banner-area breadcrumb">
+        <div class="container">
+            <div class="banner-content-area">
+                <h1 class="section-title text-normal wow scaleIn" data-wow-delay=".7s">
+                    DigiCareHouse Empowering <br> Digital Innovation
+                </h1>
+                <p class="desc"> We turn ideas into meaningful digital experiences through thoughtful strategy and
+                    refined design. <br>
+                    Our approach blends creativity, technology, and purpose to build brands that last.</p>
+                <div class="bg-shape">
+                    <img src="/assets/images/banner/shape/bg-shape.svg" alt="">
+                </div>
+                <div class="banner-shape-area">
+                    <img src="/assets/images/banner/shape/shape-01.svg" width="200" alt="" class="one wow fadeInLeft" data-wow-delay=".5s">
+                    <img src="/assets/images/banner/shape/shape-02.svg" width="220" alt="" class="two wow fadeInRight" data-wow-delay=".5s">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr banner area end -->
+
+    <!-- wpr about area start -->
+    <section class="wpr-about-area mb--16">
+        <div class="container">
+            <div class="section-inner bg-white border-1">
+                <div class="section-top-area">
+                    <div class="section-title-area">
+                        <p class="sub-title">ABOUT US</p>
+                        <h2 class="section-title second-font font-semi-bold text-normal quote">At our core, we believe
+                            good
+                            design is more than beauty, it’s emotion</h2>
+                    </div>
+                </div>
+                <div class="about-bottom-content square-dot">
+                    <div class="left-area">
+                        <ul>
+                            <li class="border-top">
+                                <p class="top-description">OUR RESULTS SPEAK FOR THEMSELVES. EACH NUMBER <br> REPRESENTS
+                                    THE TRUST WE’VE BUILT.</p>
+                            </li>
+                            <li class="border-top with-icon">
+                                <div class="icon"><img src="/assets/images/about/icon/01.svg" alt=""></div>
+                                <div class="text">
+                                    <h2 class="h4 title"><span class="odometer second-font font-semi-bold"
+                                            data-count="300">00</span>%</h2>
+                                    <p class="desc">Average ROI from design improvements</p>
+                                </div>
+                            </li>
+                            <li class="border-top with-icon">
+                                <div class="icon"><img src="/assets/images/about/icon/02.svg" alt=""></div>
+                                <div class="text">
+                                    <h2 class="h4 title"><span class="odometer second-font font-semi-bold"
+                                            data-count="120">00</span>+</h2>
+                                    <p class="desc">Projects delivered for global clients</p>
+                                </div>
+                            </li>
+                            <li class="border-top with-icon">
+                                <div class="icon"><img src="/assets/images/about/icon/03.svg" alt=""></div>
+                                <div class="text">
+                                    <h2 class="h4 title"><span class="odometer second-font font-semi-bold"
+                                            data-count="4.9">00</span><span class="prefix">/ 5</span></h2>
+                                    <p class="desc">Client rating based on 100+ reviews</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-area">
+                        <div class="image-area">
+                            <img src="/assets/images/about/01.webp" width="802" alt="">
+                            <img class="image-shape-right-bottom" src="/assets/images/about/shape-01.svg" alt="">
+                        </div>
+                    </div>
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+                <div class="bottom-shape-area square-dot">
+                    <img src="/assets/images/about/shape-02.svg" alt="">
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr about area end -->
+
+    <!-- wpr brand area start -->
+    <div class="wpr-brand-area mb--16">
+        <div class="container">
+            <div class="section-inner square-dot">
+                <div class="left-text">
+                    <p>//WE’VE <br> TRUSTED BY</p>
+                </div>
+                <div class="right-marquee-area">
+                    <div class="brand-inner">
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-1.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-2.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-3.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-4.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-5.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-6.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-7.png" alt="">
+                        </div>
+                        
+                        
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-1.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-2.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-3.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-4.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-5.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-6.png" alt="">
+                        </div>
+                        <div class="brand-wrapper">
+                            <img src="/assets/images/brand/new-brand-7.png" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <span class="square-shape top-left"></span>
+                <span class="square-shape bottom-left"></span>
+                <span class="square-shape top-right"></span>
+                <span class="square-shape bottom-right"></span>
+            </div>
+        </div>
+    </div>
+    <!-- wpr brand area end -->
+
+    <!-- our approch area start -->
+    <div class="our-approch-area-style-one mb--16">
+        <div class="container">
+            <div class="section-inner bg-white square-dot">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <!-- approach area left start -->
+                        <div class="approch-area-left">
+                            <div class="section-title-area">
+                                <p class="sub-title">Our Approach</p>
+                                <h2 class="section-title second-font font-semi-bold text-normal quote">Expertise
+                                    in Strategy, <br> Design
+                                    and Development</h2>
+                            </div>
+                            <p class="disc">
+                                The digital agency work process may vary depending on the <br> specific project and
+                                client needs, but typically follows these <br> basic steps. It is a collaborative and
+                                iterative process.
+                            </p>
+                            <a href="/services" class="wpr-btn btn-primary with-icon">
+                                <div class="inner">
+                                    <div class="icon">
+                                        <span>
+                                            <img src="/assets/images/icon/button-arrow.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/images/icon/button-arrow.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/images/icon/button-arrow.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/images/icon/button-arrow.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/images/icon/button-arrow.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/images/icon/button-arrow.svg" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                                Explore Our Service
+                            </a>
+                        </div>
+                        <!-- approach area left end -->
+                    </div>
+                    <div class="col-lg-5 rts-slide-left-gsap mt_sm--30">
+                        <!-- single approch area start -->
+                        <div class="single-approach-area-start">
+                            <div class="left-area">
+                                <h3 class="title">Discover & Define</h3>
+                                <p class="disc">Based on the information gathered during discovery <br>
+                                    the agency will develop a customized audience.</p>
+                            </div>
+                        </div>
+                        <!-- single approch area end -->
+                        <!-- single approch area start -->
+                        <div class="single-approach-area-start two">
+                            <div class="left-area">
+                                <h3 class="title">Concept & Strategy</h3>
+                                <p class="disc">Based on insights uncovered during discovery, <br> the agency defines a
+                                    clear strategic direction.</p>
+                            </div>
+                        </div>
+                        <!-- single approch area end -->
+                        <!-- single approch area start -->
+                        <div class="single-approach-area-start three mb--0">
+                            <div class="left-area">
+                                <h3 class="title">Design & Develop</h3>
+                                <p class="disc">Based on the finalized strategy, develops <br> functional and optimized
+                                    digital experiences.</p>
+                            </div>
+                        </div>
+                        <!-- single approch area end -->
+                    </div>
+                </div>
+                <span class="square-shape top-left"></span>
+                <span class="square-shape bottom-left"></span>
+                <span class="square-shape top-right"></span>
+                <span class="square-shape bottom-right"></span>
+            </div>
+        </div>
+    </div>
+    <!-- our approch area end -->
+
+    <!-- wpr why choose us area end -->
+    <section class="wpr-why-choose-us-area2 mb--16">
+        <div class="container">
+            <div class="section-inner border-1">
+                <div class="section-title-area">
+                    <p class="sub-title">WHY CHOOSE US</p>
+                    <h2 class="section-title second-font font-semi-bold text-normal">Help Brands <br> Grow With Clarity
+                    </h2>
+                </div>
+                <div class="bottom-content-area">
+                    <div class="why-choose-wrapper2 square-dot wow fadeInRight" data-wow-delay=".2s">
+                        <div class="icon">
+                            <img src="/assets/images/why-choose/icon/01.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="h6 title second-font font-semi-bold text-normal">Strategy-Driven Design</h3>
+                            <p class="desc">We combine research, storytelling, and design thinking to build solutions
+                                that align with your goals — not just trends.</p>
+                        </div>
+                        <span class="square-shape top-left"></span>
+                        <span class="square-shape top-right"></span>
+                    </div>
+                    <div class="why-choose-wrapper2 square-dot wow fadeInRight" data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="/assets/images/why-choose/icon/02.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2 class="h6 title second-font font-semi-bold text-normal">Crafted for Impact</h2>
+                            <p class="desc">From user experience to brand consistency, every detail is designed to make
+                                a measurable difference.</p>
+                        </div>
+                        <span class="square-shape top-right"></span>
+                    </div>
+                    <div class="why-choose-wrapper2 square-dot wow fadeInRight" data-wow-delay=".6s">
+                        <div class="icon">
+                            <img src="/assets/images/why-choose/icon/03.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2 class="h6 title second-font font-semi-bold text-normal">Collaborative Process</h2>
+                            <p class="desc">We work closely with clients at every step, ensuring transparency, feedback,
+                                and shared success.</p>
+                        </div>
+                        <span class="square-shape top-right"></span>
+                    </div>
+                    <div class="why-choose-wrapper2 square-dot wow fadeInRight" data-wow-delay=".8s">
+                        <div class="icon">
+                            <img src="/assets/images/why-choose/icon/04.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2 class="h6 title second-font font-semi-bold text-normal">Consistent Excellence</h2>
+                            <p class="desc">Our team delivers premium quality across every touchpoint - from identity to
+                                product design.</p>
+                        </div>
+                        <span class="square-shape top-right"></span>
+                    </div>
+                </div>
+                <div class="bottom-shape-area square-dot">
+                    <img src="/assets/images/about/shape-02.svg" alt="">
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+                <div class="top-right-shape"><img src="/assets/images/why-choose/top-right-shape.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr why choose us area end -->
+
+    <!-- wpr team area start -->
+    <section class="wpr-team-area mb--16">
+        <div class="container">
+            <div class="section-inner bg-white border-1">
+                <div class="content-area">
+                    <div class="section-bg-shape"><img src="/assets/images/team/grid-big.svg" alt=""></div>
+                    <div class="section-title-area center-style">
+                        <p class="sub-title">TEAM MEMBERS</p>
+                        <h2 class="section-title second-font font-semi-bold text-normal quote">The Minds <br> Behind the
+                            Work
+                        </h2>
+                    </div>
+                    <div class="section-bottom-inner">
+                        <div class="row g-24">
+                            <div class="col-xl-3 col-md-6 wow fadeInDown" data-wow-delay=".2s">
+                                <div class="team-wrapper ">
+                                    <div class="image-area">
+                                        <img src="/assets/images/team/01.webp" alt="">
+                                    </div>
+                                    <div class="author-area">
+                                        <h3 class="title h6"> Ethan Brooks </h3>
+                                        <p class="designation">DigiCareHouse Founder</p>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/linkedin.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/github.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shape shape-top-left">
+                                        <img src="/assets/images/team/shape-top-left.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="team-wrapper down ">
+                                    <div class="image-area">
+                                        <img src="/assets/images/team/02.webp" alt="">
+                                    </div>
+                                    <div class="author-area">
+                                        <h3 class="title h6"> Liam Anderson </h3>
+                                        <p class="designation">Brand Identity Designer</p>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/linkedin.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/github.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shape shape-bottom-left">
+                                        <img src="/assets/images/team/shape-bottom-left.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 wow fadeInDown" data-wow-delay=".6s">
+                                <div class="team-wrapper ">
+                                    <div class="image-area">
+                                        <img src="/assets/images/team/03.webp" alt="">
+                                    </div>
+                                    <div class="author-area">
+                                        <h3 class="title h6"> Ethan Walker </h3>
+                                        <p class="designation">Creative Director</p>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/linkedin.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/github.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shape shape-top-right">
+                                        <img src="/assets/images/team/shape-top-right.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div class="team-wrapper down ">
+                                    <div class="image-area">
+                                        <img src="/assets/images/team/04.webp" alt="">
+                                    </div>
+                                    <div class="author-area">
+                                        <h3 class="title h6"> Mason Cole </h3>
+                                        <p class="designation">Lead UI/UX Designer</p>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/linkedin.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/github.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shape shape-bottom-right">
+                                        <img src="/assets/images/team/shape-bottom-right.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 wow fadeInDown" data-wow-delay=".2s">
+                                <div class="team-wrapper ">
+                                    <div class="image-area">
+                                        <img src="/assets/images/team/05.webp" alt="">
+                                    </div>
+                                    <div class="author-area">
+                                        <h3 class="title h6"> Noah Reed </h3>
+                                        <p class="designation">Senior Product Designer</p>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/linkedin.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/github.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shape shape-top-right">
+                                        <img src="/assets/images/team/shape-top-right.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="team-wrapper down ">
+                                    <div class="image-area">
+                                        <img src="/assets/images/team/06.webp" alt="">
+                                    </div>
+                                    <div class="author-area">
+                                        <h3 class="title h6"> Oliver Hayes </h3>
+                                        <p class="designation">Design Strategist</p>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/linkedin.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/github.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shape shape-bottom-left">
+                                        <img src="/assets/images/team/shape-bottom-left.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 wow fadeInDown" data-wow-delay=".6s">
+                                <div class="team-wrapper">
+                                    <div class="image-area">
+                                        <img src="/assets/images/team/07.webp" alt="">
+                                    </div>
+                                    <div class="author-area">
+                                        <h3 class="title h6"> James Carter </h3>
+                                        <p class="designation">Art Director</p>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/linkedin.svg" alt=""></a>
+                                                </li>
+                                                <li><a href="#"><img src="/assets/images/team/github.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shape shape-top-left">
+                                        <img src="/assets/images/team/shape-top-left.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div class="team-apply-wrapper">
+                                    <div class="top-content">
+                                        <div class="square-dot"></div>
+                                        <h3 class="title h6 text-normal font-semi-bold second-font">We’re Searching <br>
+                                            For Talents</h3>
+                                        <p class="desc">Join our team of creatives pushing boundaries, experimenting
+                                            with ideas</p>
+                                    </div>
+                                    <a href="#" class="wpr-btn btn-primary with-icon">
+                                        <div class="inner">
+                                            <div class="icon">
+                                                <span>
+                                                    <img src="/assets/images/icon/button-arrow-fixed.svg" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="/assets/images/icon/button-arrow-fixed.svg" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="/assets/images/icon/button-arrow-fixed.svg" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="/assets/images/icon/button-arrow-fixed.svg" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="/assets/images/icon/button-arrow-fixed.svg" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="/assets/images/icon/button-arrow-fixed.svg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <span>
+                                            Apply Now
+                                        </span>
+                                    </a>
+                                    <img src="/assets/images/team/grid.svg" alt="" class="shape">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-shape-area square-dot">
+                    <img src="/assets/images/about/shape-02.svg" alt="">
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr team area end -->
+
+    <!-- wpr faq area start -->
+    <section class="wpr-faq-area mb--16">
+        <div class="container">
+            <div class="section-inner bg-white border-1">
+                <div class="section-content-area">
+                    <div class="section-title-area center-style">
+                        <p class="sub-title">FAQS</p>
+                        <h2 class="section-title second-font font-semi-bold text-normal">FAQs </h2>
+                    </div>
+                    <div class="accordion-one" id="accordionExample2">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    What if I only need one specific service?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" role="region" aria-labelledby="headingSix" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="desc">
+                                        Absolutely — you don’t need to book a full package. Whether it’s a brand
+                                        refresh, a website redesign, or UI/UX for a single product, we tailor our
+                                        approach to match your exact needs and budget.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" role="region" aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="desc">
+                                        Project timelines depend on the scope — most branding projects take 3–4 weeks,
+                                        while full website or product design projects typically range from 6–8 weeks.
+                                        We’ll confirm an exact timeline during the discovery phase.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                    Do you work with clients internationally?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse show" role="region" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="desc">
+                                        Yes. We collaborate with clients around the world through remote workshops,
+                                        video calls, and real-time communication tools — ensuring a smooth process
+                                        regardless of location.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Can you handle both design and development?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" role="region" aria-labelledby="headingNine" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="desc">
+                                        Yes. While our core focus is design, we partner with trusted developers to bring
+                                        your project to life with high-quality, responsive code — ensuring seamless
+                                        design-to-development handoff.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    How do we start a project with your team?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" role="region" aria-labelledby="headingTen" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="desc">
+                                        Simply reach out through our contact form or email. We’ll schedule a short
+                                        discovery call to learn about your goals, then provide a proposal tailored to
+                                        your needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="top-left-shape">
+                        <img src="/assets/images/faq/top-left-shape.svg" alt="">
+                    </div>
+                    <div class="bg-shape">
+                        <img src="/assets/images/faq/grid.svg" alt="">
+                    </div>
+                </div>
+                <div class="bottom-shape-area square-dot">
+                    <img src="/assets/images/about/shape-02.svg" alt="">
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr faq area end -->
+
+    <!-- wpr cta area start -->
+    <section class="wpr-cta-area">
+        <div class="container">
+            <div class="section-inner border-1">
+                <div class="section-title-area">
+                    <h2 class="section-title">LET’s start <br> your project</h2>
+                    <div class="logo"><img src="/assets/images/logo/header-logo.png" alt=""></div>
+                    <div class="arrow-track right">
+                        <div class="arrow"><img src="/assets/images/cta/arrow-left.svg" alt=""></div>
+                        <div class="arrow"><img src="/assets/images/cta/arrow-left.svg" alt=""></div>
+                        <div class="arrow"><img src="/assets/images/cta/arrow-left.svg" alt=""></div>
+                    </div>
+                    <div class="arrow-track left">
+                        <div class="arrow"><img src="/assets/images/cta/arrow-right.svg" alt=""></div>
+                        <div class="arrow"><img src="/assets/images/cta/arrow-right.svg" alt=""></div>
+                        <div class="arrow"><img src="/assets/images/cta/arrow-right.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="bg-shape"><img src="/assets/images/cta/grid.svg" alt=""></div>
+                <div class="section-bottom-shape">
+                    <img src="/assets/images/cta/graphic.svg" alt="">
+                    <span class="tag left">IMPACTFUL CREATIVE</span>
+                    <span class="tag right">GLOBAL SUPPORT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr cta area end -->
+
+    <!-- wpr contact area start -->
+    <section id="contact" class="wpr-contact-area mb--16">
+        <div class="container">
+            <div class="section-inner">
+                <div class="left-content-area">
+                    <div class="get-in-touch">
+                        <p class="sub-title">CONTACT</p>
+                        <ul>
+                            <li><a href="#">hello@digicarehouse.com</a></li>
+                            <li><a href="#">(+1) 123 456-7890</a></li>
+                        </ul>
+                    </div>
+                    <div class="location-area">
+                        <p class="sub-title">OFFFICES</p>
+                        <ul>
+                            <li>
+                                <h2 class="h4">Montréal</h2>
+                                <p>4200 Saint Laurent Blvd, Suite 305 <br> Montreal, QC H2W 2R2 <br> Canada</p>
+                            </li>
+                            <li>
+                                <h2 class="h4">Texas</h2>
+                                <p>1920 McKinney Avenue, 7th Floor <br> Dallas, TX 75201 <br> United States</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form-area">
+                    <form id="contact-form" action="mailer.php" method="POST" enctype="multipart/form-data">
+                        <div class="single-input">
+                            <label for="name">/YOUR NAME</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name">
+                        </div>
+                        <div class="single-input">
+                            <label for="email">/YOUR E-MAIL</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your e-mail">
+                        </div>
+                        <div class="single-input">
+                            <label for="message">/MORE ABOUT THE PROJECT</label>
+                            <textarea id="message" name="message" placeholder="Leave us message" required></textarea>
+                        </div>
+                        <div class="single-input last">
+                            <label for="upload-attachment">
+                                <i class="fa-sharp-duotone fa-light fa-paperclip"></i> Add an Attachment
+                                <input type="file" name="file" id="upload-attachment">
+                            </label>
+                        </div>
+                        <div class="form-btn-area">
+                            <button type="submit" class="wpr-btn">Submit Message</button>
+                        </div>
+                        <div id="form-messages"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr contact area end -->
+
+
+    <!-- wpr footer area start -->
+    <div class="wpr-footer-area">
+        <div class="container">
+            <div class="section-inner border-1">
+                <div class="footer-top">
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li class="square-dot"></li>
+                        <li><a href="/services">Services</a></li>
+                        <li class="square-dot"></li>
+                        <li><a href="/works">Projects</a></li>
+                        <li class="square-dot"></li>
+                        <li><a href="#">Pricing Plan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo-area square-dot">
+                    <a href="/"><img src="/assets/images/logo/footer-logo-new.png" alt=""></a>
+                    <div class="shape one"><img src="/assets/images/logo/shape-01.svg" alt=""></div>
+                    <div class="shape two"><img src="/assets/images/logo/shape-02.svg" alt=""></div>
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+                <div class="copyright-area">
+                    <div class="left-social-area">
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                            <li><a href="#">Behance</a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">
+                        ©
+                         DigiCareHouse. All Rights Reserved
+                    </p>
+                    <button class="scroll-top-btn">
+                        Back to Top
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 3.29688L7.64062 3.64062L1.39062 9.89062L2.10938 10.6094L8 4.71875L13.8906 10.6094L14.6094 9.89062L8.35938 3.64062L8 3.29688Z" fill="black" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wpr footer area end -->
+
+    <!-- offcanvase search -->
+    <div class="search-input-area">
+        <div class="container">
+            <div class="search-input-inner">
+                <div class="input-div">
+                    <input class="search-input autocomplete" type="text" placeholder="Search by keyword or #">
+                    <button><i class="far fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
+    </div>
+
+
+    <!-- side bar area  -->
+
+    <!-- side abr area end -->
+
+    <button id="goTop" class="show">
+        <span class="border-progress" style="--progress-angle: 360deg;"></span>
+        <span class="ic-wrap">
+        <span class="icon icon-long-arrow-alt-up-solid"><i class="fa-sharp fa-regular fa-arrow-up-long"></i></span>
+        </span>
+    </button>
+
+
+    <!-- jquery js -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- contact form js -->` }} />
+  );
+}
