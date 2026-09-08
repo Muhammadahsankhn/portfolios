@@ -715,7 +715,7 @@ export default function Page() {
                         <div class="right-content-area">
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <a href="/works/intelligent-business-solutions" target="_blank" rel="noopener noreferrer" class="fullpage-mockup-link" aria-label="Open the full Intelligent Business Solutions website preview in a new page">
+                                    <a href="/portfolio/01" target="_blank" rel="noopener noreferrer" class="fullpage-mockup-link" aria-label="Open the full Intelligent Business Solutions website preview in a new page">
                                         <img src="/assets/images/working-process/01.jpg" alt="Intelligent Business Solutions website displayed on a laptop">
                                     </a>
                                 </div>
@@ -730,7 +730,9 @@ export default function Page() {
                             </div>
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <img src="/assets/images/working-process/02.jpg" alt="">
+                                    <a href="/portfolio/02" target="_blank" rel="noopener noreferrer" class="fullpage-mockup-link" aria-label="Open the full Capitalink Advisory website preview in a new page">
+                                        <img src="/assets/images/working-process/02.jpg" alt="Capitalink Advisory website displayed on a laptop">
+                                    </a>
                                 </div>
                                 <div class="content-area">
                                     <div class="number">//02</div>
@@ -743,7 +745,9 @@ export default function Page() {
                             </div>
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <img src="/assets/images/working-process/03.jpg" alt="">
+                                    <a href="/portfolio/03" target="_blank" rel="noopener noreferrer" class="fullpage-mockup-link" aria-label="Open the full Indiana Menswear website preview in a new page">
+                                        <img src="/assets/images/working-process/03.jpg" alt="Indiana Menswear website displayed on a laptop">
+                                    </a>
                                 </div>
                                 <div class="content-area">
                                     <div class="number">//03</div>
@@ -756,7 +760,9 @@ export default function Page() {
                             </div>
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <img src="/assets/images/working-process/04.jpg" alt="">
+                                    <a href="/portfolio/04" target="_blank" rel="noopener noreferrer" class="fullpage-mockup-link" aria-label="Open the full LuxaWatch website preview in a new page">
+                                        <img src="/assets/images/working-process/04.jpg" alt="LuxaWatch website displayed on a laptop">
+                                    </a>
                                 </div>
                                 <div class="content-area">
                                     <div class="number">//04</div>
