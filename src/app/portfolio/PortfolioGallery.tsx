@@ -147,6 +147,19 @@ export default function PortfolioGallery() {
             </button>
           ))}
         </div>
+
+        <div className="portfolio-category-select">
+          <label htmlFor="portfolio-category">Project category</label>
+          <select
+            id="portfolio-category"
+            value={activeCategory}
+            onChange={(event) => setActiveCategory(event.target.value as Category)}
+          >
+            {categories.map((category) => (
+              <option key={category} value={category}>{category}</option>
+            ))}
+          </select>
+        </div>
       </div>
 
       <div className="portfolio-results-heading" aria-live="polite">

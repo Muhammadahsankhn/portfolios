@@ -197,9 +197,12 @@ body {
   position: sticky;
   z-index: 10;
   top: 0;
-  padding: 22px 0 18px;
+  margin: 0 -18px;
+  padding: 18px;
+  border-bottom: 1px solid rgba(7, 17, 31, 0.08);
   background: rgba(247, 249, 248, 0.94);
   backdrop-filter: blur(14px);
+  box-shadow: 0 12px 24px rgba(7, 17, 31, 0.04);
 }
 
 .portfolio-search {
@@ -217,8 +220,9 @@ body {
   transform: translateY(-50%);
 }
 
-.portfolio-search input {
+.portfolio-page .portfolio-search input[type="search"] {
   width: 100%;
+  max-width: none;
   height: 60px;
   padding: 0 20px 0 56px;
   border: 1px solid rgba(7, 17, 31, 0.14);
@@ -238,11 +242,14 @@ body {
 .portfolio-categories {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 9px;
 }
 
-.portfolio-categories button {
+.portfolio-page .portfolio-categories button {
   flex: 0 0 auto;
+  width: auto;
+  max-width: none;
   padding: 10px 16px;
   border: 1px solid rgba(7, 17, 31, 0.14);
   border-radius: 999px;
@@ -259,6 +266,10 @@ body {
   border-color: var(--portfolio-ink);
   color: #fff;
   background: var(--portfolio-ink);
+}
+
+.portfolio-category-select {
+  display: none;
 }
 
 .portfolio-results-heading {
@@ -503,11 +514,44 @@ body {
   }
 
   .portfolio-tools {
-    padding-top: 14px;
+    margin: 0 -10px;
+    padding: 12px 10px;
   }
 
-  .portfolio-search input {
+  .portfolio-page .portfolio-search input[type="search"] {
     height: 54px;
+  }
+
+  .portfolio-search {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-categories {
+    display: none;
+  }
+
+  .portfolio-category-select {
+    display: block;
+  }
+
+  .portfolio-category-select label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--portfolio-muted);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .portfolio-page .portfolio-category-select select {
+    width: 100%;
+    max-width: none;
+    height: 48px;
+    padding: 0 42px 0 15px;
+    border: 1px solid rgba(7, 17, 31, 0.14);
+    border-radius: 12px;
+    color: var(--portfolio-ink);
+    background: #fff;
+    font-size: 14px;
   }
 
   .portfolio-grid {
