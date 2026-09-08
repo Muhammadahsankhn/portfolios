@@ -120,6 +120,7 @@ body {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 1203 / 749;
+  border-radius: 18px;
 }
 
 .wpr-about-area .about-team-photo {
