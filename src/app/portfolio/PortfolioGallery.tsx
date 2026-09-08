@@ -111,7 +111,7 @@ const projects: Project[] = [
 export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [query, setQuery] = useState("");
-  const [layout, setLayout] = useState<Layout>("compact");
+  const [layout, setLayout] = useState<Layout>("grid");
 
   const filteredProjects = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
