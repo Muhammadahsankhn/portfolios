@@ -111,6 +111,23 @@ body {
   background: #005d74;
 }
 
+.wpr-about-area .about-bottom-content .right-area,
+.wpr-about-area .about-team-photo-wrap {
+  height: 100%;
+}
+
+.wpr-about-area .about-team-photo-wrap {
+  overflow: hidden;
+}
+
+.wpr-about-area .about-team-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* Keep the main navigation sticky while allowing the announcement bar to scroll away. */
 .site-sticky-header {
   top: -30px !important;
