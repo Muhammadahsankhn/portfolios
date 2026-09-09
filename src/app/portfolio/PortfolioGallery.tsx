@@ -41,6 +41,12 @@ const categorySearchTerms: Record<Exclude<Category, "All">, string[]> = {
 const thumbnail = (number: number) =>
   `/assets/images/working-process/${String(number).padStart(2, "0")}.jpg`;
 
+const galleryLayoutClasses: Record<Layout, string> = {
+  grid: "grid-cols-1 gap-[38px] min-[768px]:grid-cols-2 min-[768px]:gap-x-7 min-[768px]:gap-y-12",
+  compact: "grid-cols-2 gap-x-3.5 gap-y-7 min-[768px]:grid-cols-3 min-[768px]:gap-x-5 min-[768px]:gap-y-[34px]",
+  list: "grid-cols-1 gap-5",
+};
+
 const projects: Project[] = [
   {
     number: 1,
@@ -113,6 +119,13 @@ export default function PortfolioGallery() {
   const [query, setQuery] = useState("");
   const [layout, setLayout] = useState<Layout>("compact");
 
+  const layoutButtonClass = (buttonLayout: Layout) =>
+    `grid h-[34px] w-[38px] cursor-pointer place-items-center rounded-[7px] border-0 p-2 transition-colors ${
+      layout === buttonLayout
+        ? "bg-[#07111f] text-white"
+        : "bg-transparent text-[#667085] hover:bg-[#07111f] hover:text-white"
+    }`;
+
   const filteredProjects = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     const searchTerms = normalizedQuery.split(/\s+/).filter(Boolean);
@@ -138,15 +151,16 @@ export default function PortfolioGallery() {
   }, [activeCategory, query]);
 
   return (
-    <section className="portfolio-browser" aria-label="Project gallery">
-      <div className="portfolio-tools">
-        <div className="portfolio-search">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
+    <section className="mx-auto max-w-[1440px]" aria-label="Project gallery">
+      <div className="sticky top-0 z-10 -mx-[18px] border-b border-[#07111f14] bg-[#f7f9f8f0] p-[18px] shadow-[0_12px_24px_rgba(7,17,31,0.04)] backdrop-blur-[14px] max-[767px]:-mx-2.5 max-[767px]:p-2.5">
+        <div className="relative mb-[18px] max-[767px]:mb-2.5">
+          <svg className="absolute left-5 top-1/2 -translate-y-1/2 fill-none stroke-[#52606d] stroke-[1.8]" aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
             <circle cx="11" cy="11" r="7" />
             <path d="m16.2 16.2 4.3 4.3" />
           </svg>
           <label className="sr-only" htmlFor="portfolio-search">Search projects</label>
           <input
+            className="h-[60px] w-full max-w-none rounded-[14px] border border-[#07111f24] bg-white py-0 pl-14 pr-5 text-base text-[#07111f] shadow-[0_10px_35px_rgba(7,17,31,0.04)] outline-none focus:border-[#006c78] focus:shadow-[0_0_0_4px_rgba(0,108,120,0.1)] max-[767px]:h-[54px]"
             id="portfolio-search"
             type="search"
             value={query}
@@ -155,12 +169,16 @@ export default function PortfolioGallery() {
           />
         </div>
 
-        <div className="portfolio-categories" aria-label="Filter projects by category">
+        <div className="hidden flex-wrap justify-center gap-[9px] min-[768px]:flex" aria-label="Filter projects by category">
           {categories.map((category) => (
             <button
               key={category}
               type="button"
-              className={activeCategory === category ? "active" : ""}
+              className={`w-auto max-w-none flex-none cursor-pointer rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors ${
+                activeCategory === category
+                  ? "border-[#07111f] bg-[#07111f] text-white"
+                  : "border-[#07111f24] bg-transparent text-[#344054] hover:border-[#07111f] hover:bg-[#07111f] hover:text-white"
+              }`}
               onClick={() => setActiveCategory(category)}
               aria-pressed={activeCategory === category}
             >
@@ -169,9 +187,10 @@ export default function PortfolioGallery() {
           ))}
         </div>
 
-        <div className="portfolio-category-select">
-          <label htmlFor="portfolio-category">Project category</label>
+        <div className="min-[768px]:hidden">
+          <label className="mb-1.5 block text-xs font-bold text-[#667085]" htmlFor="portfolio-category">Project category</label>
           <select
+            className="h-12 w-full max-w-none rounded-xl border border-[#07111f24] bg-white py-0 pl-[15px] pr-[42px] text-sm text-[#07111f]"
             id="portfolio-category"
             value={activeCategory}
             onChange={(event) => setActiveCategory(event.target.value as Category)}
@@ -183,63 +202,71 @@ export default function PortfolioGallery() {
         </div>
       </div>
 
-      <div className="portfolio-results-heading" aria-live="polite">
-        <p>{filteredProjects.length} {filteredProjects.length === 1 ? "project" : "projects"}</p>
-        <div className="portfolio-results-actions">
-          <span>{activeCategory === "All" ? "All categories" : activeCategory}</span>
-          <div className="portfolio-layout-switcher" role="group" aria-label="Choose portfolio layout">
+      <div className="my-[34px] mb-5 flex items-center justify-between max-[767px]:items-end" aria-live="polite">
+        <p className="m-0 text-sm font-bold text-[#07111f]">{filteredProjects.length} {filteredProjects.length === 1 ? "project" : "projects"}</p>
+        <div className="flex items-center gap-[18px] max-[767px]:flex-col max-[767px]:items-end max-[767px]:gap-2">
+          <span className="m-0 text-sm text-[#667085]">{activeCategory === "All" ? "All categories" : activeCategory}</span>
+          <div className="flex gap-[3px] rounded-[10px] border border-[#07111f1f] bg-white p-1" role="group" aria-label="Choose portfolio layout">
             <button
               type="button"
-              className={layout === "compact" ? "active" : ""}
+              className={layoutButtonClass("compact")}
               onClick={() => setLayout("compact")}
               aria-label="Compact grid"
               aria-pressed={layout === "compact"}
               title="Compact grid"
             >
-              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="1.5" y="2" width="4" height="6" rx=".7" /><rect x="8" y="2" width="4" height="6" rx=".7" /><rect x="14.5" y="2" width="4" height="6" rx=".7" /><rect x="1.5" y="12" width="4" height="6" rx=".7" /><rect x="8" y="12" width="4" height="6" rx=".7" /><rect x="14.5" y="12" width="4" height="6" rx=".7" /></svg>
+              <svg className="h-[18px] w-[18px] fill-none stroke-current stroke-[1.5]" aria-hidden="true" viewBox="0 0 20 20"><rect x="1.5" y="2" width="4" height="6" rx=".7" /><rect x="8" y="2" width="4" height="6" rx=".7" /><rect x="14.5" y="2" width="4" height="6" rx=".7" /><rect x="1.5" y="12" width="4" height="6" rx=".7" /><rect x="8" y="12" width="4" height="6" rx=".7" /><rect x="14.5" y="12" width="4" height="6" rx=".7" /></svg>
             </button>
             <button
               type="button"
-              className={layout === "grid" ? "active" : ""}
+              className={layoutButtonClass("grid")}
               onClick={() => setLayout("grid")}
               aria-label="Comfortable grid"
               aria-pressed={layout === "grid"}
               title="Comfortable grid"
             >
-              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="2" width="6" height="6" rx="1" /><rect x="12" y="2" width="6" height="6" rx="1" /><rect x="2" y="12" width="6" height="6" rx="1" /><rect x="12" y="12" width="6" height="6" rx="1" /></svg>
+              <svg className="h-[18px] w-[18px] fill-none stroke-current stroke-[1.5]" aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="2" width="6" height="6" rx="1" /><rect x="12" y="2" width="6" height="6" rx="1" /><rect x="2" y="12" width="6" height="6" rx="1" /><rect x="12" y="12" width="6" height="6" rx="1" /></svg>
             </button>
             <button
               type="button"
-              className={layout === "list" ? "active" : ""}
+              className={layoutButtonClass("list")}
               onClick={() => setLayout("list")}
               aria-label="List view"
               aria-pressed={layout === "list"}
               title="List view"
             >
-              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="3" width="5" height="5" rx="1" /><path d="M10 5.5h8M10 14.5h8" /><rect x="2" y="12" width="5" height="5" rx="1" /></svg>
+              <svg className="h-[18px] w-[18px] fill-none stroke-current stroke-[1.5]" aria-hidden="true" viewBox="0 0 20 20"><rect x="2" y="3" width="5" height="5" rx="1" /><path d="M10 5.5h8M10 14.5h8" /><rect x="2" y="12" width="5" height="5" rx="1" /></svg>
             </button>
           </div>
         </div>
       </div>
 
       {filteredProjects.length > 0 ? (
-        <div className={`portfolio-grid portfolio-layout-${layout}`}>
+        <div className={`grid ${galleryLayoutClasses[layout]}`}>
           {filteredProjects.map((project, index) => {
+            const isList = layout === "list";
             const card = (
               <>
-                <div className="portfolio-card-image">
+                <div className={`relative aspect-square w-full overflow-hidden bg-[#eef1f0] ${isList ? "rounded-none" : "rounded-[18px] max-[767px]:rounded-[13px]"}`}>
                   <Image
+                    className="transform-gpu object-contain transition-[transform,filter] duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-hover:scale-[1.035] group-hover:brightness-[0.96] group-active:scale-[1.018] group-active:duration-200 motion-reduce:transition-none"
                     src={project.image}
                     alt={`${project.title} website mockup`}
                     fill
                     sizes="(max-width: 767px) 100vw, 50vw"
                     priority={index < 2}
                   />
-                  <span className="portfolio-card-arrow" aria-hidden="true">↗</span>
+                  <span className="absolute right-[18px] top-[18px] grid h-12 w-12 place-items-center rounded-full bg-[#07111fd1] text-[22px] leading-none text-white backdrop-blur-[10px]" aria-hidden="true">↗</span>
                 </div>
-                <div className="portfolio-card-content">
-                  <p>{project.category}</p>
-                  <h2>{project.title}</h2>
+                <div className={isList ? "p-[28px_36px] max-[767px]:p-[18px]" : "p-[20px_3px_0]"}>
+                  <p className={`mb-[7px] text-xs font-bold uppercase tracking-[0.1em] text-[#006c78] ${isList ? "max-[767px]:text-[10px]" : ""}`}>{project.category}</p>
+                  <h2 className={`m-0 font-semibold tracking-[-0.035em] text-[#07111f] ${
+                    layout === "compact"
+                      ? "text-[clamp(19px,1.7vw,26px)]"
+                      : isList
+                        ? "text-[clamp(23px,2.2vw,34px)] max-[767px]:text-[clamp(18px,5vw,24px)]"
+                        : "text-[clamp(23px,2.2vw,34px)]"
+                  }`}>{project.title}</h2>
                 </div>
               </>
             );
@@ -250,7 +277,11 @@ export default function PortfolioGallery() {
                 href={`/portfolio/${String(project.number).padStart(2, "0")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="portfolio-card"
+                className={`group min-w-0 text-[#07111f] no-underline ${
+                  isList
+                    ? "grid grid-cols-[42%_1fr] items-center overflow-hidden rounded-[13px] border border-[#07111f1a] bg-white min-[768px]:grid-cols-[minmax(220px,32%)_1fr] min-[768px]:rounded-[18px]"
+                    : "block"
+                }`}
                 aria-label={`Open the full-page preview for ${project.title}`}
               >
                 {card}
@@ -259,11 +290,11 @@ export default function PortfolioGallery() {
           })}
         </div>
       ) : (
-        <div className="portfolio-empty">
-          <span aria-hidden="true">⌕</span>
-          <h2>No matching projects</h2>
-          <p>Try another search term or choose a different category.</p>
-          <button type="button" onClick={() => { setQuery(""); setActiveCategory("All"); }}>
+        <div className="rounded-[20px] border border-dashed border-[#07111f2e] bg-white/60 px-5 py-[90px] text-center">
+          <span className="text-[52px] text-[#667085]" aria-hidden="true">⌕</span>
+          <h2 className="mb-1.5 mt-3 text-[#07111f]">No matching projects</h2>
+          <p className="mb-[22px] text-[#667085]">Try another search term or choose a different category.</p>
+          <button className="cursor-pointer rounded-[9px] border-0 bg-[#07111f] px-[18px] py-2.5 text-white" type="button" onClick={() => { setQuery(""); setActiveCategory("All"); }}>
             Clear filters
           </button>
         </div>

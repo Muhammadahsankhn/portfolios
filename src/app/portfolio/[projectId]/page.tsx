@@ -36,8 +36,9 @@ export default async function PortfolioProjectPreview({
   }
 
   return (
-    <main className="fullpage-project-preview">
+    <main className="m-0 min-h-screen w-full bg-[#f7f7f7] p-0">
       <img
+        className="m-0 block h-auto w-full"
         src={`/assets/images/portfolio/${projectId}-fullpage.webp`}
         alt={`Full-page website design for portfolio project ${projectId}`}
       />
