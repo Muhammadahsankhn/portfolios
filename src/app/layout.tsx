@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import FaqAccordion from "./FaqAccordion";
+import Web3FormsContact from "./Web3FormsContact";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -37,8 +39,10 @@ export default function RootLayout({
         <link rel="preload" href="/assets/css/style.css" as="style" />
         <link rel="stylesheet" href="/assets/css/style.css" />
       </head>
-      <body className="home-bg main-home onepage overflow-x-visible">
+      <body className="home-bg main-home onepage overflow-x-visible" suppressHydrationWarning>
         {children}
+        <FaqAccordion />
+        <Web3FormsContact />
 
         {/* jquery js */}
         <Script src="/assets/js/plugins/jquery.min.js" strategy="beforeInteractive" />

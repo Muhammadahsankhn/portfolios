@@ -423,6 +423,7 @@
     },
     imageSlideGsap: function () {
       $(document).ready(function () {
+        if (!document.querySelector(".images")) return;
         gsap.to(".images", {
           scrollTrigger: {
             // trigger: ".images",
@@ -435,6 +436,7 @@
         })
       });
       $(document).ready(function () {
+        if (!document.querySelector(".images-r")) return;
         gsap.to(".images-r", {
           scrollTrigger: {
             // trigger: ".images",
@@ -447,6 +449,7 @@
         })
       });
       $(document).ready(function () {
+        if (!document.querySelector(".images-2")) return;
         gsap.to(".images-2", {
           scrollTrigger: {
             // trigger: ".images",

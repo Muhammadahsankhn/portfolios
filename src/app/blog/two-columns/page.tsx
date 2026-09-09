@@ -386,20 +386,20 @@ export default function Page() {
                     <div class="get-in-touch">
                         <p class="sub-title">CONTACT</p>
                         <ul>
-                            <li><a href="#">hello@digicarehouse.com</a></li>
-                            <li><a href="#">(+1) 123 456-7890</a></li>
+                            <li><a href="mailto:info@bitaccounting.com">info@bitaccounting.com</a></li>
+                            <li><a href="tel:8483843773">(848) 384 3773</a></li>
                         </ul>
                     </div>
                     <div class="location-area">
-                        <p class="sub-title">OFFFICES</p>
+                        <p class="sub-title">OFFICES</p>
                         <ul>
                             <li>
-                                <h2 class="h4">Montréal</h2>
-                                <p>4200 Saint Laurent Blvd, Suite 305 <br> Montreal, QC H2W 2R2 <br> Canada</p>
+                                <h2 class="h4">Head Office</h2>
+                                <p>493 Washington Ave, Albany, <br> NY 12206, United States</p>
                             </li>
                             <li>
-                                <h2 class="h4">Texas</h2>
-                                <p>1920 McKinney Avenue, 7th Floor <br> Dallas, TX 75201 <br> United States</p>
+                                <h2 class="h4">Back Office</h2>
+                                <p>Office # 501, 5th Floor, Block A, <br> Anum Classic, Shahrah-e-Faisal, <br> Karachi, Pakistan 75500</p>
                             </li>
                         </ul>
                     </div>
@@ -463,10 +463,10 @@ export default function Page() {
                 <div class="copyright-area">
                     <div class="left-social-area">
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Behance</a></li>
+                            <li><a href="https://www.facebook.com/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> Youtube</a></li>
+                            <li><a href="http://linkedin.com/company/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/digicarehouseagency/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
                         </ul>
                     </div>
                     <p class="copyright">

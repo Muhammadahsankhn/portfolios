@@ -181,29 +181,7 @@ export default function Page() {
                     <p class="desc"> We turn ideas into timeless digital experiences <br> through thoughtful strategy
                         and refined aesthetics.</p>
                     <div class="button-area">
-                        <a href="#services" class="wpr-btn btn-primary with-icon">
-                            <div class="inner">
-                                <div class="icon">
-                                    <span>
-                                        <img src="/assets/images/icon/button-arrow.svg" alt="">
-                                    </span>
-                                    <span>
-                                        <img src="/assets/images/icon/button-arrow.svg" alt="">
-                                    </span>
-                                    <span>
-                                        <img src="/assets/images/icon/button-arrow.svg" alt="">
-                                    </span>
-                                    <span>
-                                        <img src="/assets/images/icon/button-arrow.svg" alt="">
-                                    </span>
-                                    <span>
-                                        <img src="/assets/images/icon/button-arrow.svg" alt="">
-                                    </span>
-                                    <span>
-                                        <img src="/assets/images/icon/button-arrow.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
+                        <a href="#services" class="wpr-btn btn-primary">
                             Explore Services
                         </a>
                     </div>
@@ -352,6 +330,61 @@ export default function Page() {
         </div>
     </section>
     <!-- wpr about area end -->
+
+    <!-- selected portfolio area start -->
+    <section id="works" class="home-portfolio-showcase mb--16">
+        <div class="container">
+            <div class="home-portfolio-inner bg-white border-1">
+                <div class="home-portfolio-heading">
+                    <div class="section-title-area">
+                        <p class="sub-title">SELECTED WORK</p>
+                        <h2 class="section-title second-font font-semi-bold text-normal">Purpose-led websites built to move businesses forward.</h2>
+                    </div>
+                    <p class="home-portfolio-intro">Every project starts with a business goal—building trust, simplifying a customer journey, automating operations, or increasing conversions. These selected designs show how strategy becomes a clear, useful digital experience.</p>
+                </div>
+
+                <div class="home-portfolio-grid">
+                    <a class="home-portfolio-card" href="/portfolio/21" target="_blank" rel="noopener noreferrer" aria-label="View Synaptic AI Systems full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/21.jpg" alt="Synaptic AI Systems website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>AI &amp; Business Automation</p><h3>Synaptic AI Systems</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/24" target="_blank" rel="noopener noreferrer" aria-label="View Clandestine Healthcare full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/24.jpg" alt="Clandestine Healthcare website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>Healthcare</p><h3>Clandestine Healthcare</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/07" target="_blank" rel="noopener noreferrer" aria-label="View Havenly Properties full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/07.jpg" alt="Havenly Properties website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>Real Estate</p><h3>Havenly Properties</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/01" target="_blank" rel="noopener noreferrer" aria-label="View Intelligent Business Solutions full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/01.jpg" alt="Intelligent Business Solutions website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>Financial Services</p><h3>Intelligent Business Solutions</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/35" target="_blank" rel="noopener noreferrer" aria-label="View Cybrexis Security full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/35.jpg" alt="Cybrexis Security website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>Cybersecurity</p><h3>Cybrexis Security</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/03" target="_blank" rel="noopener noreferrer" aria-label="View Indiana Menswear full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/03.jpg" alt="Indiana Menswear website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>E-commerce</p><h3>Indiana Menswear</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/22" target="_blank" rel="noopener noreferrer" aria-label="View Classmont Academy full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/22.jpg" alt="Classmont Academy website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>Education &amp; E-Learning</p><h3>Classmont Academy</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/12" target="_blank" rel="noopener noreferrer" aria-label="View Workflow Automation Platform full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/12.jpg" alt="Workflow Automation Platform website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>SaaS and Software</p><h3>Workflow Automation Platform</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                </div>
+
+                <div class="home-portfolio-action">
+                    <a href="/portfolio" class="wpr-btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- selected portfolio area end -->
 
     <!-- wpr services area start -->
     <section id="services" class="wpr-services-area mb--16">
@@ -670,8 +703,8 @@ export default function Page() {
     </section> -->
     <!-- wpr project area end -->
 
-    <!-- wpr working process area start -->
-    <section id="works" class="wpr-working-process mb--16">
+    <!-- wpr working process area start
+    <section class="wpr-working-process mb--16">
         <div class="container">
             <div class="section-inner bg-white border-1">
                 <div class="row">
@@ -785,7 +818,7 @@ export default function Page() {
             </div>
         </div>
     </section>
-    <!-- wpr working process area end -->
+    wpr working process area end -->
 
     <!-- wpr marquee area start -->
     <section class="wpr-marquee-area mb--16">
@@ -1420,48 +1453,42 @@ export default function Page() {
                     <div class="get-in-touch">
                         <p class="sub-title">CONTACT</p>
                         <ul>
-                            <li><a href="#">hello@digicarehouse.com</a></li>
-                            <li><a href="#">(+1) 123 456-7890</a></li>
+                            <li><a href="mailto:info@bitaccounting.com">info@bitaccounting.com</a></li>
+                            <li><a href="tel:8483843773">(848) 384 3773</a></li>
                         </ul>
                     </div>
                     <div class="location-area">
-                        <p class="sub-title">OFFFICES</p>
+                        <p class="sub-title">OFFICES</p>
                         <ul>
                             <li>
-                                <h2 class="h4">Montréal</h2>
-                                <p>4200 Saint Laurent Blvd, Suite 305 <br> Montreal, QC H2W 2R2 <br> Canada</p>
+                                <h2 class="h4">Head Office</h2>
+                                <p>493 Washington Ave, Albany, <br> NY 12206, United States</p>
                             </li>
                             <li>
-                                <h2 class="h4">Texas</h2>
-                                <p>1920 McKinney Avenue, 7th Floor <br> Dallas, TX 75201 <br> United States</p>
+                                <h2 class="h4">Back Office</h2>
+                                <p>Office # 501, 5th Floor, Block A, <br> Anum Classic, Shahrah-e-Faisal, <br> Karachi, Pakistan 75500</p>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="contact-form-area">
-                    <form id="contact-form" action="mailer.php" method="POST" enctype="multipart/form-data">
+                    <form id="contact-form" action="/api/contact" method="POST">
                         <div class="single-input">
                             <label for="name">/YOUR NAME</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name">
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                         </div>
                         <div class="single-input">
                             <label for="email">/YOUR E-MAIL</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your e-mail">
+                            <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
                         </div>
                         <div class="single-input">
                             <label for="message">/MORE ABOUT THE PROJECT</label>
                             <textarea id="message" name="message" placeholder="Leave us message" required></textarea>
                         </div>
-                        <div class="single-input last">
-                            <label for="upload-attachment">
-                                <i class="fa-sharp-duotone fa-light fa-paperclip"></i> Add an Attachment
-                                <input type="file" name="file" id="upload-attachment">
-                            </label>
-                        </div>
                         <div class="form-btn-area">
                             <button type="submit" class="wpr-btn">Submit Message</button>
                         </div>
-                        <div id="form-messages"></div>
+                        <div id="form-messages" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
@@ -1496,10 +1523,10 @@ export default function Page() {
                 <div class="copyright-area">
                     <div class="left-social-area">
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Behance</a></li>
+                            <li><a href="https://www.facebook.com/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> Youtube</a></li>
+                            <li><a href="http://linkedin.com/company/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/digicarehouseagency/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
                         </ul>
                     </div>
                     <p class="copyright">

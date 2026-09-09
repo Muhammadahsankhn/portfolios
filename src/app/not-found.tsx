@@ -267,10 +267,10 @@ export default function NotFound() {
                 <div class="copyright-area">
                     <div class="left-social-area">
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Behance</a></li>
+                            <li><a href="https://www.facebook.com/digicarehouseagency">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@digicarehouseagency">Youtube</a></li>
+                            <li><a href="http://linkedin.com/company/digicarehouseagency">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/digicarehouseagency/">Instagram</a></li>
                         </ul>
                     </div>
                     <p class="copyright">

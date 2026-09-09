@@ -18696,3 +18696,21 @@ section .section-inner.border-1 {
   }
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+
+
+
+
+/* Force FAQ visibility */
+.accordion-collapse.show {
+  display: block !important;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* Custom Footer Square Shape Color */
+.wpr-footer-area .square-shape {
+  background-color: #005D74 !important;
+}

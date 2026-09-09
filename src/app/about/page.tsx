@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us - DigiCareHouse",
-  description: "Your Ultimate Solution for Creative Agency",
+    title: "About Us - Agenio",
+    description: "Your Ultimate Solution for Creative Agency",
 };
 
 export default function Page() {
-  return (
-    <div dangerouslySetInnerHTML={{ __html: `<!-- Preload -->
+    return (
+        <div dangerouslySetInnerHTML={{
+            __html: `<!-- Preload -->
     <div class="preloader overflow-hidden">
-        <div class="site-name"><span>DIGICAREHOUSE</span></div>
+        <div class="site-name"><span>AGENIO</span></div>
         <div class="preloader-gutters">
             <div class="bar">
                 <div class="inner-bar"></div>
@@ -39,20 +40,20 @@ export default function Page() {
     </div>
     <!-- /Preload -->
     <!-- header area start -->
-    <div class="header-top">
+    <header class="header-style-one">
+        <div class="header-top">
             <div class="header-top-inner">
                 <div class="left-icon"><img src="/assets/images/icon/green-left.svg" alt=""></div>
                 <p class="text">WE ARE AVAILABLE FOR <span>DECEMBER PROJECTS</span></p>
                 <div class="right-icon"><img src="/assets/images/icon/green-right.svg" alt=""></div>
             </div>
-    <header class="header-style-one header--sticky">
         </div>
         <div class="container">
             <div class="header-style-one-wrapper">
                 <div class="left-area square-dot">
                     <div class="logo-area">
                         <a href="/" class="logo">
-                            <img src="/assets/images/logo/header-logo.png" alt="logo">
+                            <img src="/assets/images/logo/01.svg" alt="logo">
                         </a>
                     </div>
                     <span class="square-shape top-left"></span>
@@ -204,7 +205,7 @@ export default function Page() {
         <div class="container">
             <div class="banner-content-area">
                 <h1 class="section-title text-normal wow scaleIn" data-wow-delay=".7s">
-                    DigiCareHouse Empowering <br> Digital Innovation
+                    Agenio Empowering <br> Digital Innovation
                 </h1>
                 <p class="desc"> We turn ideas into meaningful digital experiences through thoughtful strategy and
                     refined design. <br>
@@ -299,51 +300,41 @@ export default function Page() {
                 <div class="right-marquee-area">
                     <div class="brand-inner">
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-1.png" alt="">
+                            <img src="/assets/images/brand/01.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-2.png" alt="">
+                            <img src="/assets/images/brand/02.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-3.png" alt="">
+                            <img src="/assets/images/brand/03.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-4.png" alt="">
+                            <img src="/assets/images/brand/04.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-5.png" alt="">
+                            <img src="/assets/images/brand/05.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-6.png" alt="">
+                            <img src="/assets/images/brand/06.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-7.png" alt="">
-                        </div>
-                        
-                        
-                        <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-1.png" alt="">
+                            <img src="/assets/images/brand/01.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-2.png" alt="">
+                            <img src="/assets/images/brand/02.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-3.png" alt="">
+                            <img src="/assets/images/brand/03.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-4.png" alt="">
+                            <img src="/assets/images/brand/04.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-5.png" alt="">
+                            <img src="/assets/images/brand/05.svg" alt="">
                         </div>
                         <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-6.png" alt="">
+                            <img src="/assets/images/brand/06.svg" alt="">
                         </div>
-                        <div class="brand-wrapper">
-                            <img src="/assets/images/brand/new-brand-7.png" alt="">
-                        </div>
-                        
-                        
                     </div>
                 </div>
                 <span class="square-shape top-left"></span>
@@ -531,7 +522,7 @@ export default function Page() {
                                     </div>
                                     <div class="author-area">
                                         <h3 class="title h6"> Ethan Brooks </h3>
-                                        <p class="designation">DigiCareHouse Founder</p>
+                                        <p class="designation">Agenio Founder</p>
                                         <div class="social">
                                             <ul>
                                                 <li><a href="#"><img src="/assets/images/team/twitter.svg" alt=""></a>
@@ -746,6 +737,105 @@ export default function Page() {
     </section>
     <!-- wpr team area end -->
 
+    <!-- wpr awards area start -->
+    <section class="wpr-awards-area mb--16">
+        <div class="container">
+            <div class="section-inner bg-white border-1">
+                <div class="section-title-area">
+                    <p class="sub-title">AWARDS</p>
+                    <h2 class="section-title second-font font-semi-bold text-normal wpr-text-anime-style-1">Design That
+                        Gets Noticed
+                    </h2>
+                </div>
+                <div class="award-accordion-area">
+                    <div class="award-item active">
+                        <div class="award-header">
+                            <div class="left">
+                                <div class="date">March 2025</div>
+                                <div class="content">
+                                    <h3 class="h6 title">Awwwards – Site of the Day <br> NovaPay</h3>
+                                    <p class="desc">
+                                        Our redesign for NovaPay App was recognized for its seamless user flow, bold
+                                        visual
+                                        storytelling, and innovative motion design that set a new standard for fintech
+                                        experiences.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="toggle"><span class="plus">+</span> <span class="minus">-</span></div>
+                        </div>
+                        <div class="image-area">
+                            <img src="/assets/images/awards/01.webp" width="306" alt="">
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-header">
+                            <div class="left">
+                                <div class="date">January 2025</div>
+                                <div class="content">
+                                    <h3 class="h6 title">Behance - Featured in UX/UI Design <br>Muse Art Fair</h3>
+                                    <p class="desc">
+                                        The Muse Art Fair 2024 campaign was featured for its clean typography, dynamic
+                                        layout, and cohesive brand system across digital and print platforms.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="toggle"><span class="plus">+</span> <span class="minus">-</span></div>
+                        </div>
+                        <div class="image-area">
+                            <img src="/assets/images/awards/02.webp" width="306" alt="">
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-header">
+                            <div class="left">
+                                <div class="date">October 2024</div>
+                                <div class="content">
+                                    <h3 class="h6 title">CSS Design Awards - Best UI Design<br>Lunaris Coffee Co.</h3>
+                                    <p class="desc">
+                                        Our work for Lunaris Coffee Co. earned recognition for intuitive structure,
+                                        refined color palettes, and elevated product presentation that enhanced user
+                                        engagement.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="toggle"><span class="plus">+</span> <span class="minus">-</span></div>
+                        </div>
+                        <div class="image-area">
+                            <img src="/assets/images/awards/03.webp" width="306" alt="">
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-header">
+                            <div class="left">
+                                <div class="date">October 2024</div>
+                                <div class="content">
+                                    <h3 class="h6 title">Webby Awards - Honoree<br>Axis Legal Group</h3>
+                                    <p class="desc">
+                                        The Axis Legal Group website was awarded for its sophisticated simplicity,
+                                        balancing professional tone with a modern, responsive digital experience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="toggle"><span class="plus">+</span> <span class="minus">-</span></div>
+                        </div>
+                        <div class="image-area">
+                            <img src="/assets/images/awards/04.webp" width="306" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-shape-area square-dot">
+                    <img src="/assets/images/about/shape-02.svg" alt="">
+                    <span class="square-shape top-left"></span>
+                    <span class="square-shape bottom-left"></span>
+                    <span class="square-shape top-right"></span>
+                    <span class="square-shape bottom-right"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wpr awards area end -->
+
     <!-- wpr faq area start -->
     <section class="wpr-faq-area mb--16">
         <div class="container">
@@ -869,7 +959,7 @@ export default function Page() {
             <div class="section-inner border-1">
                 <div class="section-title-area">
                     <h2 class="section-title">LET’s start <br> your project</h2>
-                    <div class="logo"><img src="/assets/images/logo/header-logo.png" alt=""></div>
+                    <div class="logo"><img src="/assets/images/cta/cta-logo.svg" alt=""></div>
                     <div class="arrow-track right">
                         <div class="arrow"><img src="/assets/images/cta/arrow-left.svg" alt=""></div>
                         <div class="arrow"><img src="/assets/images/cta/arrow-left.svg" alt=""></div>
@@ -900,20 +990,20 @@ export default function Page() {
                     <div class="get-in-touch">
                         <p class="sub-title">CONTACT</p>
                         <ul>
-                            <li><a href="#">hello@digicarehouse.com</a></li>
-                            <li><a href="#">(+1) 123 456-7890</a></li>
+                            <li><a href="#">hello@agenio.com</a></li>
+                            <li><a href="tel:8483843773">(848) 384 3773</a></li>
                         </ul>
                     </div>
                     <div class="location-area">
-                        <p class="sub-title">OFFFICES</p>
+                        <p class="sub-title">OFFICES</p>
                         <ul>
                             <li>
-                                <h2 class="h4">Montréal</h2>
-                                <p>4200 Saint Laurent Blvd, Suite 305 <br> Montreal, QC H2W 2R2 <br> Canada</p>
+                                <h2 class="h4">Head Office</h2>
+                                <p>493 Washington Ave, Albany, <br> NY 12206, United States</p>
                             </li>
                             <li>
-                                <h2 class="h4">Texas</h2>
-                                <p>1920 McKinney Avenue, 7th Floor <br> Dallas, TX 75201 <br> United States</p>
+                                <h2 class="h4">Back Office</h2>
+                                <p>Office # 501, 5th Floor, Block A, <br> Anum Classic, Shahrah-e-Faisal, <br> Karachi, Pakistan 75500</p>
                             </li>
                         </ul>
                     </div>
@@ -966,7 +1056,7 @@ export default function Page() {
                     </ul>
                 </div>
                 <div class="footer-logo-area square-dot">
-                    <a href="/"><img src="/assets/images/logo/footer-logo-new.png" alt=""></a>
+                    <a href="/"><img src="/assets/images/logo/footer-logo.svg" alt=""></a>
                     <div class="shape one"><img src="/assets/images/logo/shape-01.svg" alt=""></div>
                     <div class="shape two"><img src="/assets/images/logo/shape-02.svg" alt=""></div>
                     <span class="square-shape top-left"></span>
@@ -977,15 +1067,15 @@ export default function Page() {
                 <div class="copyright-area">
                     <div class="left-social-area">
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Behance</a></li>
+                            <li><a href="https://www.facebook.com/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> Youtube</a></li>
+                            <li><a href="http://linkedin.com/company/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/digicarehouseagency/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
                         </ul>
                     </div>
                     <p class="copyright">
                         ©
-                         DigiCareHouse. All Rights Reserved
+                         Agenio. All Rights Reserved
                     </p>
                     <button class="scroll-top-btn">
                         Back to Top
@@ -1041,5 +1131,5 @@ export default function Page() {
     
     
     <!-- contact form js -->` }} />
-  );
+    );
 }

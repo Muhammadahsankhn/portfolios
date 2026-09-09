@@ -248,7 +248,7 @@ export default function Page() {
                             <i class="icon icon-map-marker-solid"></i>
                             <h2 class="h6 title fw-semibold">Our Location</h2>
                             <p class="text">
-                                USA, New York – 1060 Str.
+                                493 Washington Ave, Albany, NY 12206
                             </p>
                         </div>
                     </div>
@@ -279,15 +279,15 @@ export default function Page() {
                         </ul>
                     </div>
                     <div class="location-area">
-                        <p class="sub-title">OFFFICES</p>
+                        <p class="sub-title">OFFICES</p>
                         <ul>
                             <li>
-                                <h2 class="h4">Montréal</h2>
-                                <p>4200 Saint Laurent Blvd, Suite 305 <br> Montreal, QC H2W 2R2 <br> Canada</p>
+                                <h2 class="h4">Head Office</h2>
+                                <p>493 Washington Ave, Albany, <br> NY 12206, United States</p>
                             </li>
                             <li>
-                                <h2 class="h4">Texas</h2>
-                                <p>1920 McKinney Avenue, 7th Floor <br> Dallas, TX 75201 <br> United States</p>
+                                <h2 class="h4">Back Office</h2>
+                                <p>Office # 501, 5th Floor, Block A, <br> Anum Classic, Shahrah-e-Faisal, <br> Karachi, Pakistan 75500</p>
                             </li>
                         </ul>
                     </div>
@@ -351,10 +351,10 @@ export default function Page() {
                 <div class="copyright-area">
                     <div class="left-social-area">
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Behance</a></li>
+                            <li><a href="https://www.facebook.com/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> Youtube</a></li>
+                            <li><a href="http://linkedin.com/company/digicarehouseagency" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/digicarehouseagency/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
                         </ul>
                     </div>
                     <p class="copyright">
