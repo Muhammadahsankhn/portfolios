@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/fav.svg" />
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/fav.png" />
         {/* swiper css */}
         <link rel="preload" href="/assets/css/plugins/swiper.min.css" as="style" />
         <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css" />

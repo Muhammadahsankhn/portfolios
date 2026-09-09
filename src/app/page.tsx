@@ -40,7 +40,7 @@ export default function Page() {
     </div>
     <!-- /Preload -->
     <!-- header area start -->
-    <header class="header-style-one site-sticky-header" style="position: sticky; top: 0; z-index: 1000; background-color: var(--color-white, #ffffff); border-bottom: 1px solid #eaeaea;">
+            <header class="header-style-one site-sticky-header" style="position: sticky; top: 0; z-index: 1000; background-color: var(--color-white, #ffffff); border-bottom: 1px solid #eaeaea;">
         <div class="header-top">
             <div class="header-top-inner">
                 <div class="left-icon"><img src="/assets/images/icon/green-left.svg" alt=""></div>
@@ -67,8 +67,8 @@ export default function Page() {
                             <a class="main-element wpr-dropdown-main-element" href="#home">HOME</a>
                         </li>
                         <li class="menu-item"><a class="main-element" href="#about">ABOUT US</a></li>
+                        <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
                         <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
-                        <li class="menu-item"><a class="main-element" href="#works">WORKS</a></li>
                         <li class="menu-item"><a class="main-element" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -91,28 +91,22 @@ export default function Page() {
                         <div class="mobile-menu-main">
                             <nav class="nav-main mainmenu-nav">
                                 <ul class="list-unstyled wpr-desktop-menu" id="mobile-menu">
-
                                     <!-- HOME -->
                                     <li class="menu-item">
                                         <a class="main-element" href="#home">HOME</a>
                                     </li>
-
                                     <!-- ABOUT -->
                                     <li class="menu-item">
                                         <a class="main-element" href="#about">ABOUT US</a>
                                     </li>
-
+                                    <!-- PROJECTS -->
+                                    <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
                                     <!-- SERVICES -->
                                     <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
-
-                                    <!-- PROJECTS -->
-                                    <li class="menu-item"><a class="main-element" href="#works">WORKS</a></li>
-
                                     <!-- CONTACT -->
                                     <li class="menu-item">
                                         <a class="main-element" href="#contact">CONTACT</a>
                                     </li>
-
                                 </ul>
                             </nav>
                         </div>
@@ -181,8 +175,8 @@ export default function Page() {
                     <p class="desc"> We turn ideas into timeless digital experiences <br> through thoughtful strategy
                         and refined aesthetics.</p>
                     <div class="button-area">
-                        <a href="#services" class="wpr-btn btn-primary">
-                            Explore Services
+                        <a href="#works" class="wpr-btn btn-primary">
+                            Explore Projects
                         </a>
                     </div>
                 </div>
@@ -938,7 +932,7 @@ export default function Page() {
                                     <div class="col-lg-6 col-md-6">
                                         <div class="why-choose-wrapper">
                                             <div class="wrapper-header two">
-                                                <div class="logo"><img src="/assets/images/logo/header-logo.png" width="160" alt=""></div>
+                                                <h3 class="title second-font font-semi-bold text-normal" style="color: #005D74;">DigiCareHouse</h3>
                                                 <img src="/assets/images/why-choose/grid.svg" alt="" class="shape">
                                             </div>
                                             <ul class="wrapper-list two">
