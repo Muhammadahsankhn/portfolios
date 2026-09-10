@@ -69,8 +69,7 @@ export default function RootLayout({
         <Script src="/assets/js/vendor/wow.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/text-plugin.js" strategy="lazyOnload" />
         <Script src="/assets/js/plugins/odometer.js" strategy="lazyOnload" />
-        {/* contact form js */}
-        <Script src="/assets/js/plugins/contact-form.js" strategy="lazyOnload" />
+        {/* contact form handled by Web3FormsContact component */}
         <Script src="/assets/js/main.js" strategy="lazyOnload" />
       </body>
     </html>

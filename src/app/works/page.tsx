@@ -42,7 +42,7 @@ export default function Page() {
     <div class="header-top">
             <div class="header-top-inner">
                 <div class="left-icon"><img src="/assets/images/icon/green-left.svg" alt=""></div>
-                <p class="text">WE ARE AVAILABLE FOR <span>DECEMBER PROJECTS</span></p>
+                <p class="text">WE ARE AVAILABLE FOR <span>NEW PROJECTS</span></p>
                 <div class="right-icon"><img src="/assets/images/icon/green-right.svg" alt=""></div>
             </div>
     <header class="header-style-one header--sticky">

@@ -32,20 +32,25 @@ export default function Web3FormsContact() {
       }
 
       try {
-        const formData = new FormData(form);
-        formData.append("_subject", "New DigiCareHouse Project Inquiry");
-        formData.append("_template", "table");
-        formData.append("_captcha", "false");
-        formData.append(
-          "_cc",
-          "susmani@bitaccounting.com,talha@bitaccounting.com,aman@bitaccounting.com,mhmaskari@bitaccounting.com",
-        );
+        // Collect form data
+        const name = (form.querySelector<HTMLInputElement>("#name")?.value || "").trim();
+        const email = (form.querySelector<HTMLInputElement>("#email")?.value || "").trim();
+        const formMessage = (form.querySelector<HTMLTextAreaElement>("#message")?.value || "").trim();
 
-        const response = await fetch("https://formsubmit.co/ajax/info@bitaccounting.com", {
+        // Get category if it exists
+        const categorySelect = form.querySelector<HTMLSelectElement>("select[name='category']");
+        const category = categorySelect?.value || "";
+
+        if (!name || !email || !formMessage) {
+          throw new Error("Please fill in all required fields.");
+        }
+
+        const response = await fetch("/api/contact", {
           method: "POST",
-          body: formData,
-          headers: { Accept: "application/json" },
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message: formMessage, category }),
         });
+
         const result = (await response.json()) as SubmissionResult;
 
         if (!response.ok || result.success === false) {

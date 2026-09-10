@@ -44,7 +44,7 @@ export default function Page() {
         <div class="header-top">
             <div class="header-top-inner">
                 <div class="left-icon"><img src="/assets/images/icon/green-left.svg" alt=""></div>
-                <p class="text">WE ARE AVAILABLE FOR <span>DECEMBER PROJECTS</span></p>
+                <p class="text">WE ARE AVAILABLE FOR <span>NEW PROJECTS</span></p>
                 <div class="right-icon"><img src="/assets/images/icon/green-right.svg" alt=""></div>
             </div>
         </div>
@@ -966,7 +966,7 @@ export default function Page() {
                                     </div>
                                 </div>
                                 <div class="bottom-button-area">
-                                    <a href="#" class="wpr-btn btn-primary">Get Started</a>
+                                    <a href="#contact" class="wpr-btn btn-primary">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -1479,14 +1479,13 @@ export default function Page() {
                             <label for="category">/CHOOSE A CATEGORY</label>
                             <select id="category" name="category" required defaultValue="">
                                 <option value="" disabled>Select a project category</option>
-                                <option value="AI &amp; Business Automation">AI &amp; Business Automation</option>
-                                <option value="Healthcare">Healthcare</option>
-                                <option value="Real Estate">Real Estate</option>
-                                <option value="Financial Services">Financial Services</option>
-                                <option value="Cybersecurity">Cybersecurity</option>
-                                <option value="E-commerce">E-commerce</option>
-                                <option value="Education &amp; E-Learning">Education &amp; E-Learning</option>
-                                <option value="SaaS and Software">SaaS and Software</option>
+                                <option value="Mobile Application">Mobile Application</option>
+                                <option value="Video Production">Video Production</option>
+                                <option value="Design &amp; Branding">Design &amp; Branding</option>
+                                <option value="Ecommerce">Ecommerce</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Software Development">Software Development</option>
+                                <option value="AI &amp; Automation">AI &amp; Automation</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
