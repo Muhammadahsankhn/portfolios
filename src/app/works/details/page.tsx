@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Work Details - DigiCareHouse",
-  description: "Your Ultimate Solution for Creative Agency",
+    title: "Work Details - DigiCareHouse",
+    description: "Your Ultimate Solution for Creative Agency",
 };
 
 export default function Page() {
-  return (
-    <div dangerouslySetInnerHTML={{ __html: `<!-- Preload -->
+    return (
+        <div dangerouslySetInnerHTML={{
+            __html: `<!-- Preload -->
     <div class="preloader overflow-hidden">
         <div class="site-name"><span>DIGICAREHOUSE</span></div>
         <div class="preloader-gutters">
@@ -539,7 +540,7 @@ export default function Page() {
                     <div class="get-in-touch">
                         <p class="sub-title">CONTACT</p>
                         <ul>
-                            <li><a href="mailto:info@bitaccounting.com">info@bitaccounting.com</a></li>
+                            <li><a href="mailto:info@digicarehouse.com">info@digicarehouse.com</a></li>
                             <li><a href="tel:8483843773">(848) 384 3773</a></li>
                         </ul>
                     </div>
@@ -679,5 +680,5 @@ export default function Page() {
     
     
     <!-- contact form js -->` }} />
-  );
+    );
 }

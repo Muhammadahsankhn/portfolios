@@ -419,6 +419,7 @@ body {
 .home-portfolio-action .wpr-btn {
   min-width: 210px;
   text-align: center;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {

@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DigiCareHouse - Creative Agency",
-  description: "Your Ultimate Solution for Creative Agency",
+    title: "DigiCareHouse - Creative Agency",
+    description: "Your Ultimate Solution for Creative Agency",
 };
 
 export default function Page() {
-  return (
-    <>
-    <div dangerouslySetInnerHTML={{ __html: `<!-- Preload -->
+    return (
+        <>
+            <div dangerouslySetInnerHTML={{
+                __html: `<!-- Preload -->
     <div class="preloader overflow-hidden">
         <div class="site-name"><span>DIGICAREHOUSE</span></div>
         <div class="preloader-gutters">
@@ -68,7 +69,7 @@ export default function Page() {
                         </li>
                         <li class="menu-item"><a class="main-element" href="#about">ABOUT US</a></li>
                         <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
-                        <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
+                        <li class="menu-item"><a class="main-element" href="/services">SERVICES</a></li>
                         <li class="menu-item"><a class="main-element" href="#faqs">FAQS</a></li>
                         <li class="menu-item"><a class="main-element" href="#contact">CONTACT</a></li>
                     </ul>
@@ -103,7 +104,7 @@ export default function Page() {
                                     <!-- PROJECTS -->
                                     <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
                                     <!-- SERVICES -->
-                                    <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
+                                    <li class="menu-item"><a class="main-element" href="/services">SERVICES</a></li>
                                     <!-- FAQS -->
                                     <li class="menu-item"><a class="main-element" href="#faqs">FAQS</a></li>
                                     <!-- CONTACT -->
@@ -341,9 +342,9 @@ export default function Page() {
                 </div>
 
                 <div class="home-portfolio-grid">
-                    <a class="home-portfolio-card" href="/portfolio/21" target="_blank" rel="noopener noreferrer" aria-label="View Synaptic AI Systems full website preview">
-                        <div class="home-portfolio-image"><img src="/assets/images/working-process/21.jpg" alt="Synaptic AI Systems website mockup"></div>
-                        <div class="home-portfolio-card-copy"><p>AI &amp; Business Automation</p><h3>Synaptic AI Systems</h3><span aria-hidden="true">&#8599;</span></div>
+                    <a class="home-portfolio-card" href="/portfolio/43" target="_blank" rel="noopener noreferrer" aria-label="View Arcane AI Platform full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/43.jpg" alt="Arcane AI Platform website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>AI &amp; Business Automation</p><h3>Arcane AI Platform</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/24" target="_blank" rel="noopener noreferrer" aria-label="View Clandestine Healthcare full website preview">
                         <div class="home-portfolio-image"><img src="/assets/images/working-process/24.jpg" alt="Clandestine Healthcare website mockup"></div>
@@ -372,6 +373,10 @@ export default function Page() {
                     <a class="home-portfolio-card" href="/portfolio/12" target="_blank" rel="noopener noreferrer" aria-label="View Workflow Automation Platform full website preview">
                         <div class="home-portfolio-image"><img src="/assets/images/working-process/12.jpg" alt="Workflow Automation Platform website mockup"></div>
                         <div class="home-portfolio-card-copy"><p>SaaS and Software</p><h3>Workflow Automation Platform</h3><span aria-hidden="true">&#8599;</span></div>
+                    </a>
+                    <a class="home-portfolio-card" href="/portfolio/21" target="_blank" rel="noopener noreferrer" aria-label="View Synaptic AI Systems full website preview">
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/21.jpg" alt="Synaptic AI Systems website mockup"></div>
+                        <div class="home-portfolio-card-copy"><p>AI &amp; Business Automation</p><h3>Synaptic AI Systems</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                 </div>
 
@@ -1447,7 +1452,7 @@ export default function Page() {
                     <div class="get-in-touch">
                         <p class="sub-title">CONTACT</p>
                         <ul>
-                            <li><a href="mailto:info@bitaccounting.com">info@bitaccounting.com</a></li>
+                            <li><a href="mailto:info@digicarehouse.com">info@digicarehouse.com</a></li>
                             <li><a href="tel:8483843773">(848) 384 3773</a></li>
                         </ul>
                     </div>
@@ -1512,7 +1517,7 @@ export default function Page() {
                     <ul>
                         <li><a href="#about">About Us</a></li>
                         <li class="square-dot"></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="/services">Services</a></li>
                         <li class="square-dot"></li>
                         <li><a href="#works">Projects</a></li>
                         <li class="square-dot"></li>
@@ -1595,6 +1600,6 @@ export default function Page() {
     
     
     <!-- contact form js -->` }} />
-    </>
-  );
+        </>
+    );
 }

@@ -14,25 +14,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create SMTP transporter for Microsoft 365
+    // Create SMTP transporter
+    const smtpPort = Number(process.env.SMTP_PORT) || 465;
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.office365.com",
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: false, // use STARTTLS
+      host: process.env.SMTP_HOST || "mail.digicarehouse.com",
+      port: smtpPort,
+      secure: smtpPort === 465, // true for SSL (465), false for STARTTLS (587)
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
+      },
+      tls: {
+        rejectUnauthorized: false, // allow cPanel self-signed certificates
       },
     });
 
     // All recipient emails
     const toEmails = [
-      "info@bitaccounting.com",
-      "susmani@bitaccounting.com",
-      "talha@bitaccounting.com",
-      "aman@bitaccounting.com",
-      "mhmaskari@bitaccounting.com",
-      "ahsankhan@bitaccounting.com",
+      "info@digicarehouse.com",
+      "marketing@digicarehouse.com",
+      "salman@digicarehouse.com",
+      "talha@digicarehouse.com",
     ];
 
     // Build email HTML
