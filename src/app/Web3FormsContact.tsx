@@ -32,26 +32,23 @@ export default function Web3FormsContact() {
       }
 
       try {
-        const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-        if (!accessKey) {
-          throw new Error("The contact form is not configured yet.");
-        }
-        
         const formData = new FormData(form);
-        formData.append("access_key", accessKey);
-        formData.append("subject", "New DigiCareHouse Project Inquiry");
-        formData.append("from_name", "DigiCareHouse Website");
-        
-        // Add CC emails to receive copies of the form submission
-        formData.append("cc", "info@bitaccounting.com,susmani@bitaccounting.com,talha@bitaccounting.com,aman@bitaccounting.com,mhmaskari@bitaccounting.com");
+        formData.append("_subject", "New DigiCareHouse Project Inquiry");
+        formData.append("_template", "table");
+        formData.append("_captcha", "false");
+        formData.append(
+          "_cc",
+          "susmani@bitaccounting.com,talha@bitaccounting.com,aman@bitaccounting.com,mhmaskari@bitaccounting.com",
+        );
 
-        const response = await fetch("https://api.web3forms.com/submit", {
+        const response = await fetch("https://formsubmit.co/ajax/info@bitaccounting.com", {
           method: "POST",
           body: formData,
+          headers: { Accept: "application/json" },
         });
         const result = (await response.json()) as SubmissionResult;
 
-        if (!response.ok || !result.success) {
+        if (!response.ok || result.success === false) {
           throw new Error(result.message || "We could not send your message. Please try again.");
         }
 

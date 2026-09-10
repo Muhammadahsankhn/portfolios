@@ -14,12 +14,6 @@ export default function PortfolioPage() {
         <Link href="/" aria-label="DigiCareHouse home">
           <img className="block h-[35px] w-auto max-[767px]:h-7" src="/assets/images/logo/header-logo.png" alt="DigiCareHouse" />
         </Link>
-        <Link
-          href="/#contact"
-          className="rounded-[10px] bg-gradient-to-b from-[#087987] to-[#003b4c] px-5 py-3 text-sm font-semibold text-white no-underline transition-transform hover:-translate-y-px hover:text-white max-[767px]:px-3.5 max-[767px]:py-2.5"
-        >
-          Start a Project
-        </Link>
       </header>
 
       <section className="mx-auto max-w-[1440px] py-[100px] max-[767px]:py-[70px_42px]">

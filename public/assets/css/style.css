@@ -11454,15 +11454,7 @@ body.sal-disabled [data-sal|=flip] {
   transition: var(--transition);
 }
 .main-nav-area ul li a::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  background: var(--color-heading-1);
-  height: 1px;
-  width: 0;
-  bottom: 1px;
-  left: 0;
-  transition: var(--transition);
+  display: none;
 }
 .main-nav-area ul li.has-dropdown {
   cursor: pointer;
@@ -13439,8 +13431,8 @@ section .section-inner.border-1 {
 }
 
 .pricing-wrapper {
-  background: linear-gradient(137.66deg, #F5F5F5 21.13%, #F2F2F2 80.53%);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6), inset 0px -5px 0px #E4E4E4, inset 0px -6px 0px 1px #FAFAFA;
+  background: transparent;
+  box-shadow: none;
   border-radius: 12px;
   padding: 16px 16px 54px;
 }
@@ -14472,8 +14464,8 @@ section .section-inner.border-1 {
 .working-process-wrapper {
   position: relative;
   z-index: 1;
-  background: linear-gradient(137.66deg, #F5F5F5 21.13%, #F2F2F2 80.53%);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6), inset 0px -5px 0px #E4E4E4, inset 0px -6px 0px 1px #FAFAFA;
+  background: transparent;
+  box-shadow: none;
   border-radius: 12px;
   padding: 16px 16px 32px 16px;
   transition: all 0.5s;
@@ -16079,6 +16071,31 @@ section .section-inner.border-1 {
   border: none;
   border-bottom: 1px solid var(--color-primary);
 }
+.wpr-contact-area .section-inner .contact-form-area form .single-input select {
+  width: 100%;
+  height: 40px;
+  padding: 0 28px 0 0;
+  color: rgba(249, 250, 251, 0.6);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.wpr-contact-area .section-inner .contact-form-area form .single-input select:valid {
+  color: var(--color-white);
+}
+.wpr-contact-area .section-inner .contact-form-area form .single-input select:focus {
+  border-bottom-color: var(--color-primary);
+  outline: none;
+}
+.wpr-contact-area .section-inner .contact-form-area form .single-input select option {
+  color: #000711;
+  background-color: var(--color-white);
+}
 .wpr-contact-area .section-inner .contact-form-area form .single-input textarea {
   height: 145px;
   color: var(--color-white);
@@ -16124,8 +16141,8 @@ section .section-inner.border-1 {
   max-width: 100%;
   text-align: center;
   justify-content: center;
-  background: radial-gradient(62.56% 62.56% at 28.14% -10.42%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(137.66deg, #40454A 21.13%, #292C2E 80.53%);
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1), 60px 50px 80px rgba(0, 0, 0, 0.15), 20px 41.7776px 33.4221px rgba(0, 0, 0, 0.1503), 10px 22.3363px 17.869px rgba(0, 0, 0, 0.1417), 4px 12.5216px 10.0172px rgba(0, 0, 0, 0.135), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.1283), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.1197), inset 0px 1px 0px rgba(255, 255, 255, 0.6), inset 0px -3px 0px #1A1A1A, inset 0px -4px 0px 1px rgba(255, 255, 255, 0.1);
+  background: radial-gradient(62.56% 62.56% at 28.14% -10.42%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(137.66deg, #087A87 21.13%, #005D74 80.53%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.12), inset 0px 1px 0px rgba(255, 255, 255, 0.35), inset 0px -3px 0px #004657, inset 0px -4px 0px 1px rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   color: var(--color-white);
 }
@@ -16226,11 +16243,11 @@ section .section-inner.border-1 {
   overflow: hidden;
 }
 .wpr-faq-area .section-inner .section-content-area .accordion-one .accordion-item {
-  border: none;
+  border: 1px solid #DEDFE0;
   padding: 26px 32px;
   margin-bottom: 16px;
-  background: linear-gradient(137.66deg, #F5F5F5 21.13%, #F2F2F2 80.53%);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6), inset 0px -5px 0px #E4E4E4, inset 0px -6px 0px 1px #FAFAFA;
+  background: transparent;
+  box-shadow: none;
   border-radius: 12px;
 }
 .wpr-faq-area .section-inner .section-content-area .accordion-one .accordion-header button {
@@ -16319,8 +16336,9 @@ section .section-inner.border-1 {
 
 .why-choose-wrapper {
   padding: 16px 16px 40px;
-  background: linear-gradient(137.66deg, #F5F5F5 21.13%, #F2F2F2 80.53%);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6), inset 0px -5px 0px #E4E4E4, inset 0px -6px 0px 1px #FAFAFA;
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #DEDFE0;
   border-radius: 12px;
   max-width: 416px !important;
 }
@@ -18746,4 +18764,12 @@ section .section-inner.border-1 {
     line-height: 80px !important;
     width: 100px !important;
   }
+}
+
+/* Change all corner shapes to primary color */
+.square-shape { background-color: #005D74 !important; }
+
+/* Change FAQ accordion icons to primary color */
+.wpr-faq-area .section-inner .section-content-area .accordion-one .accordion-header button::after {
+  background: #005D74 !important;
 }

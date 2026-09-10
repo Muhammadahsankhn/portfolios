@@ -160,7 +160,7 @@ export default function PortfolioGallery() {
           </svg>
           <label className="sr-only" htmlFor="portfolio-search">Search projects</label>
           <input
-            className="h-[60px] w-full max-w-none rounded-[14px] border border-[#07111f24] bg-white py-0 pl-14 pr-5 text-base text-[#07111f] shadow-[0_10px_35px_rgba(7,17,31,0.04)] outline-none focus:border-[#006c78] focus:shadow-[0_0_0_4px_rgba(0,108,120,0.1)] max-[767px]:h-[54px]"
+            className="portfolio-search-input h-[60px] w-full max-w-none rounded-[14px] border border-[#07111f24] bg-white py-0 pl-14 pr-5 text-[#07111f] shadow-[0_10px_35px_rgba(7,17,31,0.04)] outline-none focus:border-[#006c78] focus:shadow-[0_0_0_4px_rgba(0,108,120,0.1)] max-[767px]:h-[54px]"
             id="portfolio-search"
             type="search"
             value={query}
@@ -174,10 +174,10 @@ export default function PortfolioGallery() {
             <button
               key={category}
               type="button"
-              className={`w-auto max-w-none flex-none cursor-pointer rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors ${
+              className={`portfolio-category-button w-auto max-w-none flex-none cursor-pointer rounded-full border px-5 py-3 text-base font-bold transition-colors ${
                 activeCategory === category
-                  ? "border-[#07111f] bg-[#07111f] text-white"
-                  : "border-[#07111f24] bg-transparent text-[#344054] hover:border-[#07111f] hover:bg-[#07111f] hover:text-white"
+                  ? "is-active"
+                  : ""
               }`}
               onClick={() => setActiveCategory(category)}
               aria-pressed={activeCategory === category}
@@ -190,7 +190,7 @@ export default function PortfolioGallery() {
         <div className="min-[768px]:hidden">
           <label className="mb-1.5 block text-xs font-bold text-[#667085]" htmlFor="portfolio-category">Project category</label>
           <select
-            className="h-12 w-full max-w-none rounded-xl border border-[#07111f24] bg-white py-0 pl-[15px] pr-[42px] text-sm text-[#07111f]"
+            className="portfolio-category-select h-12 w-full max-w-none rounded-xl border border-[#07111f24] bg-white py-0 pl-[15px] pr-[42px] text-[#07111f]"
             id="portfolio-category"
             value={activeCategory}
             onChange={(event) => setActiveCategory(event.target.value as Category)}
@@ -205,7 +205,7 @@ export default function PortfolioGallery() {
       <div className="my-[34px] mb-5 flex items-center justify-between max-[767px]:items-end" aria-live="polite">
         <p className="m-0 text-sm font-bold text-[#07111f]">{filteredProjects.length} {filteredProjects.length === 1 ? "project" : "projects"}</p>
         <div className="flex items-center gap-[18px] max-[767px]:flex-col max-[767px]:items-end max-[767px]:gap-2">
-          <span className="m-0 text-sm text-[#667085]">{activeCategory === "All" ? "All categories" : activeCategory}</span>
+          <span className="portfolio-current-category m-0 text-[#667085]">{activeCategory === "All" ? "All categories" : activeCategory}</span>
           <div className="flex gap-[3px] rounded-[10px] border border-[#07111f1f] bg-white p-1" role="group" aria-label="Choose portfolio layout">
             <button
               type="button"
@@ -249,7 +249,7 @@ export default function PortfolioGallery() {
               <>
                 <div className={`relative aspect-square w-full overflow-hidden bg-[#eef1f0] ${isList ? "rounded-none" : "rounded-[18px] max-[767px]:rounded-[13px]"}`}>
                   <Image
-                    className="transform-gpu object-contain transition-[transform,filter] duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-hover:scale-[1.035] group-hover:brightness-[0.96] group-active:scale-[1.018] group-active:duration-200 motion-reduce:transition-none"
+                    className="portfolio-thumbnail object-contain"
                     src={project.image}
                     alt={`${project.title} website mockup`}
                     fill
@@ -259,7 +259,7 @@ export default function PortfolioGallery() {
                   <span className="absolute right-[18px] top-[18px] grid h-12 w-12 place-items-center rounded-full bg-[#07111fd1] text-[22px] leading-none text-white backdrop-blur-[10px]" aria-hidden="true">↗</span>
                 </div>
                 <div className={isList ? "p-[28px_36px] max-[767px]:p-[18px]" : "p-[20px_3px_0]"}>
-                  <p className={`mb-[7px] text-xs font-bold uppercase tracking-[0.1em] text-[#006c78] ${isList ? "max-[767px]:text-[10px]" : ""}`}>{project.category}</p>
+                  <p className="portfolio-project-category mb-[7px] font-bold uppercase tracking-[0.1em] text-[#006c78]">{project.category}</p>
                   <h2 className={`m-0 font-semibold tracking-[-0.035em] text-[#07111f] ${
                     layout === "compact"
                       ? "text-[clamp(19px,1.7vw,26px)]"
@@ -277,7 +277,7 @@ export default function PortfolioGallery() {
                 href={`/portfolio/${String(project.number).padStart(2, "0")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group min-w-0 text-[#07111f] no-underline ${
+                className={`portfolio-project-card group min-w-0 text-[#07111f] no-underline ${
                   isList
                     ? "grid grid-cols-[42%_1fr] items-center overflow-hidden rounded-[13px] border border-[#07111f1a] bg-white min-[768px]:grid-cols-[minmax(220px,32%)_1fr] min-[768px]:rounded-[18px]"
                     : "block"

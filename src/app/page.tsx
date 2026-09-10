@@ -69,6 +69,7 @@ export default function Page() {
                         <li class="menu-item"><a class="main-element" href="#about">ABOUT US</a></li>
                         <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
                         <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
+                        <li class="menu-item"><a class="main-element" href="#faqs">FAQS</a></li>
                         <li class="menu-item"><a class="main-element" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -103,6 +104,8 @@ export default function Page() {
                                     <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
                                     <!-- SERVICES -->
                                     <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
+                                    <!-- FAQS -->
+                                    <li class="menu-item"><a class="main-element" href="#faqs">FAQS</a></li>
                                     <!-- CONTACT -->
                                     <li class="menu-item">
                                         <a class="main-element" href="#contact">CONTACT</a>
@@ -412,11 +415,11 @@ export default function Page() {
                                     <li>Mobile UI/UX Design</li>
                                     <li>App Store Optimization</li>
                                 </ul>
-                                <a href="/services/details" class="service-btn-area">
+                                <div class="service-btn-area">
                                     <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.07812 0L0 1.07812L7.71094 8.78906L0 16.5L1.07812 17.5781L9.32812 9.32812L9.84375 8.78906L9.32812 8.25L1.07812 0Z" fill="black" />
                                     </svg>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -440,11 +443,11 @@ export default function Page() {
                                     <li>Animation & Motion</li>
                                     <li>Post-Production</li>
                                 </ul>
-                                <a href="/services/details" class="service-btn-area">
+                                <div class="service-btn-area">
                                     <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.07812 0L0 1.07812L7.71094 8.78906L0 16.5L1.07812 17.5781L9.32812 9.32812L9.84375 8.78906L9.32812 8.25L1.07812 0Z" fill="black" />
                                     </svg>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -468,11 +471,11 @@ export default function Page() {
                                     <li>Graphic Design</li>
                                     <li>Visual Guidelines</li>
                                 </ul>
-                                <a href="/services/details" class="service-btn-area">
+                                <div class="service-btn-area">
                                     <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.07812 0L0 1.07812L7.71094 8.78906L0 16.5L1.07812 17.5781L9.32812 9.32812L9.84375 8.78906L9.32812 8.25L1.07812 0Z" fill="black" />
                                     </svg>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -899,7 +902,6 @@ export default function Page() {
                                                 <h3 class="title second-font font-semi-bold text-normal">Other
                                                     <span>Agenices</span>
                                                 </h3>
-                                                <img src="/assets/images/why-choose/grid.svg" alt="" class="shape">
                                             </div>
                                             <ul class="wrapper-list">
                                                 <li>
@@ -933,7 +935,6 @@ export default function Page() {
                                         <div class="why-choose-wrapper">
                                             <div class="wrapper-header two">
                                                 <h3 class="title second-font font-semi-bold text-normal" style="color: #005D74;">DigiCareHouse</h3>
-                                                <img src="/assets/images/why-choose/grid.svg" alt="" class="shape">
                                             </div>
                                             <ul class="wrapper-list two">
                                                 <li>
@@ -984,6 +985,7 @@ export default function Page() {
     <!-- wpr why choose us area end -->
 
     <!-- wpr team area start -->
+    <!--
     <section class="wpr-team-area mb--16">
         <div class="container">
             <div class="section-inner bg-white border-1">
@@ -1217,6 +1219,7 @@ export default function Page() {
             </div>
         </div>
     </section>
+    -->
     <!-- wpr team area end -->
 
     <!-- wpr testimonials area start -->
@@ -1301,7 +1304,7 @@ export default function Page() {
     <!-- wpr why choose us area end -->
 
     <!-- wpr faq area start -->
-    <section class="wpr-faq-area mb--16">
+    <section id="faqs" class="wpr-faq-area mb--16">
         <div class="container">
             <div class="section-inner bg-white border-1">
                 <div class="section-content-area">
@@ -1394,9 +1397,6 @@ export default function Page() {
                     <div class="top-left-shape">
                         <img src="/assets/images/faq/top-left-shape.svg" alt="">
                     </div>
-                    <div class="bg-shape">
-                        <img src="/assets/images/faq/grid.svg" alt="">
-                    </div>
                 </div>
                 <div class="bottom-shape-area square-dot">
                     <img src="/assets/images/about/shape-02.svg" alt="">
@@ -1474,6 +1474,21 @@ export default function Page() {
                         <div class="single-input">
                             <label for="email">/YOUR E-MAIL</label>
                             <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                        </div>
+                        <div class="single-input">
+                            <label for="category">/CHOOSE A CATEGORY</label>
+                            <select id="category" name="category" required defaultValue="">
+                                <option value="" disabled>Select a project category</option>
+                                <option value="AI &amp; Business Automation">AI &amp; Business Automation</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="Financial Services">Financial Services</option>
+                                <option value="Cybersecurity">Cybersecurity</option>
+                                <option value="E-commerce">E-commerce</option>
+                                <option value="Education &amp; E-Learning">Education &amp; E-Learning</option>
+                                <option value="SaaS and Software">SaaS and Software</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
                         <div class="single-input">
                             <label for="message">/MORE ABOUT THE PROJECT</label>

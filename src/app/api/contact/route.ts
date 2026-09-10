@@ -1,40 +1,36 @@
 import { NextResponse } from "next/server";
 
-const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/info@bitaccounting.com";
 
 export async function POST(request: Request) {
-  const accessKey =
-    process.env.WEB3FORMS_ACCESS_KEY || process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-
-  if (!accessKey) {
-    return NextResponse.json(
-      { success: false, message: "The contact form is not configured yet." },
-      { status: 500 },
-    );
-  }
-
   try {
     const formData = await request.formData();
-    formData.set("access_key", accessKey);
-    formData.set("subject", "New DigiCareHouse Project Inquiry");
-    formData.set("from_name", "DigiCareHouse Website");
+    formData.set("_subject", "New DigiCareHouse Project Inquiry");
+    formData.set("_template", "table");
+    formData.set("_captcha", "false");
+    formData.set(
+      "_cc",
+      "susmani@bitaccounting.com,talha@bitaccounting.com,aman@bitaccounting.com,mhmaskari@bitaccounting.com",
+    );
 
-    const response = await fetch(WEB3FORMS_ENDPOINT, {
+    const response = await fetch(FORMSUBMIT_ENDPOINT, {
       method: "POST",
       body: formData,
+      headers: { Accept: "application/json" },
       cache: "no-store",
     });
-    const result = (await response.json()) as { success?: boolean; message?: string };
+    const result = (await response.json()) as { success?: boolean | string; message?: string };
+    const succeeded = response.ok && result.success !== false;
 
     return NextResponse.json(
       {
-        success: response.ok && result.success === true,
+        success: succeeded,
         message:
-          response.ok && result.success === true
+          succeeded
             ? "Thanks! Your message has been sent successfully."
             : result.message || "We could not send your message. Please try again.",
       },
-      { status: response.ok && result.success === true ? 200 : response.status || 500 },
+      { status: succeeded ? 200 : response.status || 500 },
     );
   } catch {
     return NextResponse.json(
