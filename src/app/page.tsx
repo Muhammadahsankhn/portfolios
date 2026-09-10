@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <div dangerouslySetInnerHTML={{
+      <div suppressHydrationWarning dangerouslySetInnerHTML={{
                 __html: `<!-- Preload -->
     <div class="preloader overflow-hidden">
         <div class="site-name"><span>DIGICAREHOUSE</span></div>
@@ -69,7 +69,7 @@ export default function Page() {
                         </li>
                         <li class="menu-item"><a class="main-element" href="#about">ABOUT US</a></li>
                         <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
-                        <li class="menu-item"><a class="main-element" href="/services">SERVICES</a></li>
+                        <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
                         <li class="menu-item"><a class="main-element" href="#faqs">FAQS</a></li>
                         <li class="menu-item"><a class="main-element" href="#contact">CONTACT</a></li>
                     </ul>
@@ -104,7 +104,7 @@ export default function Page() {
                                     <!-- PROJECTS -->
                                     <li class="menu-item"><a class="main-element" href="#works">PROJECTS</a></li>
                                     <!-- SERVICES -->
-                                    <li class="menu-item"><a class="main-element" href="/services">SERVICES</a></li>
+                                    <li class="menu-item"><a class="main-element" href="#services">SERVICES</a></li>
                                     <!-- FAQS -->
                                     <li class="menu-item"><a class="main-element" href="#faqs">FAQS</a></li>
                                     <!-- CONTACT -->
@@ -504,11 +504,11 @@ export default function Page() {
                                     <li>Conversion Optimization</li>
                                     <li>Platform Migration</li>
                                 </ul>
-                                <a href="/services/details" class="service-btn-area">
+                                <div class="service-btn-area">
                                     <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.07812 0L0 1.07812L7.71094 8.78906L0 16.5L1.07812 17.5781L9.32812 9.32812L9.84375 8.78906L9.32812 8.25L1.07812 0Z" fill="black" />
                                     </svg>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1481,6 +1481,10 @@ export default function Page() {
                             <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
                         </div>
                         <div class="single-input">
+                            <label for="contact-number">/CONTACT NUMBER</label>
+                            <input type="tel" id="contact-number" name="contact_number" placeholder="Enter your contact number" autoComplete="tel" required>
+                        </div>
+                        <div class="single-input">
                             <label for="category">/CHOOSE A CATEGORY</label>
                             <select id="category" name="category" required defaultValue="">
                                 <option value="" disabled>Select a project category</option>
@@ -1517,7 +1521,7 @@ export default function Page() {
                     <ul>
                         <li><a href="#about">About Us</a></li>
                         <li class="square-dot"></li>
-                        <li><a href="/services">Services</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li class="square-dot"></li>
                         <li><a href="#works">Projects</a></li>
                         <li class="square-dot"></li>

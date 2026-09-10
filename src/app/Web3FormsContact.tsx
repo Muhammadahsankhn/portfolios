@@ -5,6 +5,7 @@ import { useEffect } from "react";
 type SubmissionResult = {
   success?: boolean;
   message?: string;
+  error?: string;
 };
 
 export default function Web3FormsContact() {
@@ -35,26 +36,29 @@ export default function Web3FormsContact() {
         // Collect form data
         const name = (form.querySelector<HTMLInputElement>("#name")?.value || "").trim();
         const email = (form.querySelector<HTMLInputElement>("#email")?.value || "").trim();
+        const contactNumber = (form.querySelector<HTMLInputElement>("#contact-number")?.value || "").trim();
         const formMessage = (form.querySelector<HTMLTextAreaElement>("#message")?.value || "").trim();
 
         // Get category if it exists
         const categorySelect = form.querySelector<HTMLSelectElement>("select[name='category']");
         const category = categorySelect?.value || "";
 
-        if (!name || !email || !formMessage) {
+        if (!name || !email || !contactNumber || !formMessage) {
           throw new Error("Please fill in all required fields.");
         }
 
-        const response = await fetch("/api/contact", {
+        const isLocalDevelopment = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+        const endpoint = isLocalDevelopment ? "/api/contact" : "/contact.php";
+        const response = await fetch(endpoint, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, message: formMessage, category }),
+          body: JSON.stringify({ name, email, contactNumber, message: formMessage, category }),
         });
 
         const result = (await response.json()) as SubmissionResult;
 
         if (!response.ok || result.success === false) {
-          throw new Error(result.message || "We could not send your message. Please try again.");
+          throw new Error(result.message || result.error || "We could not send your message. Please try again.");
         }
 
         form.reset();

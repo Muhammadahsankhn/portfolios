@@ -68,7 +68,7 @@ export default function Page() {
                         </li>
                         <li class="menu-item"><a class="main-element" href="/about">ABOUT US</a></li>
                         <li class="menu-item has-dropdown">
-                            <a class="main-element wpr-dropdown-main-element" href="/services">SERVICES</a>
+                            <a class="main-element wpr-dropdown-main-element" href="/#services">SERVICES</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item">
                                     <a href="/services" class="item-link link1">SERVICE</a>
@@ -147,7 +147,7 @@ export default function Page() {
 
                                         <ul id="serviceMenu" class="collapse list-unstyled ps-3" data-bs-parent="#mobile-menu">
 
-                                            <li><a href="/services" class="sub-menu">Services</a></li>
+                                            <li><a href="/#services" class="sub-menu">Services</a></li>
                                             <li><a href="/services/details" class="sub-menu">Service Details</a></li>
                                         </ul>
                                     </li>

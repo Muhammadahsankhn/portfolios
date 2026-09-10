@@ -4,10 +4,10 @@ import nodemailer from "nodemailer";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, message, category } = body;
+    const { name, email, contactNumber, message, category } = body;
 
     // Validate required fields
-    if (!name || !email || !message) {
+    if (!name || !email || !contactNumber || !message) {
       return NextResponse.json(
         { success: false, message: "Please fill in all required fields." },
         { status: 400 },
@@ -52,6 +52,10 @@ export async function POST(request: NextRequest) {
             <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background: #f5f5f5;">Email</td>
             <td style="padding: 10px; border: 1px solid #ddd;"><a href="mailto:${email}">${email}</a></td>
           </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background: #f5f5f5;">Contact Number</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">${contactNumber}</td>
+          </tr>
           ${category ? `<tr>
             <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background: #f5f5f5;">Category</td>
             <td style="padding: 10px; border: 1px solid #ddd;">${category}</td>
@@ -72,7 +76,7 @@ export async function POST(request: NextRequest) {
       from: `"DigiCareHouse Website" <${process.env.SMTP_USER}>`,
       to: toEmails.join(", "),
       replyTo: email,
-      subject: `New Project Inquiry from ${name}`,
+      subject: "Marketing website Inquiry Form",
       html: htmlContent,
     });
 
