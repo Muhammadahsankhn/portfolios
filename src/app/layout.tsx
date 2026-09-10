@@ -41,6 +41,16 @@ export default function RootLayout({
       </head>
       <body className="home-bg main-home onepage overflow-x-visible" suppressHydrationWarning>
         {children}
+        <a
+          className="whatsapp-float"
+          href="https://wa.me/18483843773"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with DigiCareHouse on WhatsApp"
+          title="Chat with us on WhatsApp"
+        >
+          <i className="fa-brands fa-whatsapp" aria-hidden="true" />
+        </a>
         <FaqAccordion />
         <Web3FormsContact />
 
