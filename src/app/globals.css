@@ -66,6 +66,13 @@ button {
   }
 }
 
+@media (max-width: 991px) {
+  #menu-btn {
+    background: #005D74 !important;
+    box-shadow: 0 3px 8px rgba(0, 93, 116, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html,
   body {
@@ -220,8 +227,8 @@ button {
 .portfolio-layout-button:hover,
 .portfolio-layout-button:focus-visible {
   color: #ffffff !important;
-  background: #ff4d00 !important;
-  box-shadow: 0 4px 10px rgba(255, 77, 0, 0.24);
+  background: #005d74 !important;
+  box-shadow: 0 4px 10px rgba(0, 93, 116, 0.24);
 }
 
 .portfolio-layout-button.is-active {
@@ -232,7 +239,7 @@ button {
 .portfolio-layout-button.is-active:hover,
 .portfolio-layout-button.is-active:focus-visible {
   color: #ffffff !important;
-  background: #ff4d00 !important;
+  background: #005d74 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -311,7 +318,6 @@ img[src*="arrow"] {
 
 .portfolio-category-button:hover,
 .portfolio-category-button:focus-visible {
-  border-color: #ff4d00 !important;
   box-shadow: 0 4px 12px rgba(255, 77, 0, 0.14);
 }
 
@@ -615,7 +621,7 @@ img[src*="arrow"] {
 
 .home-portfolio-card-copy p {
   margin: 0 0 6px;
-  color: #005d74;
+  color: #ff4d00;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
