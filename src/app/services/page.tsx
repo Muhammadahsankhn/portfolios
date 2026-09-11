@@ -478,7 +478,7 @@ export default function Page() {
         <div class="container">
             <div class="section-inner square-dot">
                 <div class="left-text">
-                    <p>//WE’VE <br> TRUSTED BY</p>
+                    <p>WE’VE <br> TRUSTED BY</p>
                 </div>
                 <div class="right-marquee-area">
                     <div class="brand-inner">
@@ -609,7 +609,7 @@ export default function Page() {
                             </div>
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <img src="/assets/images/working-process/03.jpg" alt="">
+                                    <img src="/assets/images/working-process/03.webp" loading="lazy" decoding="async" alt="Indiana Menswear website project">
                                 </div>
                                 <div class="content-area">
                                     <div class="number">//03</div>
@@ -622,7 +622,7 @@ export default function Page() {
                             </div>
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <img src="/assets/images/working-process/04.jpg" alt="">
+                                    <img src="/assets/images/working-process/04.webp" loading="lazy" decoding="async" alt="LuxaWatch website project">
                                 </div>
                                 <div class="content-area">
                                     <div class="number">//04</div>

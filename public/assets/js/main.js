@@ -281,48 +281,25 @@
     preloader: function () {
       if ($(".preloader").length) {
         var innerBars = document.querySelectorAll(".inner-bar");
-        var increment = 0;
+        var preloaderTL = gsap.timeline({
+          onComplete: function () {
+            $(".preloader").remove();
+          },
+        });
 
-        function animateBars() {
-          for (var i = 0; i < 2; i++) {
-            var randomWidth = Math.floor(Math.random() * 101);
-            gsap.to(innerBars[i + increment], {
-              width: randomWidth + "%",
-              duration: 0.3,
-              ease: "none",
-            });
-          }
-
-          gsap.delayedCall(0.3, function () {
-            for (var i = 0; i < 2; i++) {
-              gsap.to(innerBars[i + increment], {
-                width: "100%",
-                duration: 0.3,
-                ease: "none",
-              });
-            }
-
-            increment += 2;
-
-            if (increment < innerBars.length) {
-              animateBars();
-            } else {
-              var preloaderTL = gsap.timeline({
-                onComplete: function () {
-                  $(".preloader").remove();
-                },
-              });
-
-              preloaderTL.to(".preloader", {
-                "--preloader-clip": "100%",
-                duration: 0.3,
-                ease: "none",
-              });
-            }
+        // Keep the branded transition, but never make visitors wait for every
+        // image and other page asset to finish downloading.
+        preloaderTL
+          .to(innerBars, {
+            width: "100%",
+            duration: 1.5,
+            ease: "power1.out",
+          })
+          .to(".preloader", {
+            "--preloader-clip": "100%",
+            duration: 0.5,
+            ease: "power1.inOut",
           });
-        }
-
-        onWindowLoad(animateBars);
       } else {
 
       }

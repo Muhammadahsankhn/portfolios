@@ -611,7 +611,7 @@ export default function Page() {
                             </div>
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <img src="/assets/images/working-process/03.jpg" alt="">
+                                    <img src="/assets/images/working-process/03.webp" loading="lazy" decoding="async" alt="Indiana Menswear website project">
                                 </div>
                                 <div class="content-area">
                                     <div class="number">//03</div>
@@ -624,7 +624,7 @@ export default function Page() {
                             </div>
                             <div class="working-process-wrapper">
                                 <div class="image-area">
-                                    <img src="/assets/images/working-process/04.jpg" alt="">
+                                    <img src="/assets/images/working-process/04.webp" loading="lazy" decoding="async" alt="LuxaWatch website project">
                                 </div>
                                 <div class="content-area">
                                     <div class="number">//04</div>

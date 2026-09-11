@@ -1,12 +1,25 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import FaqAccordion from "./FaqAccordion";
 import Web3FormsContact from "./Web3FormsContact";
+import InternationalPhoneInput from "./InternationalPhoneInput";
+import "intl-tel-input/styles";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DigiCareHouse Agency HTML Template (Next.js)",
-  description: "Your Ultimate Solution for Creative Agency",
+  title: {
+    default: "DigiCareHouse | Digital Products, Branding & Marketing",
+    template: "%s | DigiCareHouse",
+  },
+  description: "DigiCareHouse creates high-impact websites, mobile applications, software, branding, video, ecommerce, and AI automation solutions.",
+  applicationName: "DigiCareHouse",
+  robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#005D74",
 };
 
 export default function RootLayout({
@@ -40,7 +53,8 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/style.css" />
       </head>
       <body className="home-bg main-home onepage overflow-x-visible" suppressHydrationWarning>
-        {children}
+        <a className="skip-to-content" href="#site-content">Skip to main content</a>
+        <div id="site-content">{children}</div>
         <a
           className="whatsapp-float"
           href="https://wa.me/18483843773"
@@ -52,6 +66,7 @@ export default function RootLayout({
           <i className="fa-brands fa-whatsapp" aria-hidden="true" />
         </a>
         <FaqAccordion />
+        <InternationalPhoneInput />
         <Web3FormsContact />
 
         {/* jquery js */}
@@ -61,10 +76,10 @@ export default function RootLayout({
         <Script src="/assets/js/vendor/jqueryui.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/waypoint.js" strategy="lazyOnload" />
         <Script src="/assets/js/plugins/swiper.js" strategy="lazyOnload" />
-        <Script src="/assets/js/plugins/gsap.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/plugins/scrolltigger.js" strategy="lazyOnload" />
+        <Script src="/assets/js/plugins/gsap.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/plugins/scrolltigger.js" strategy="beforeInteractive" />
         <Script src="/assets/js/plugins/smoothscroll.js" strategy="lazyOnload" />
-        <Script src="/assets/js/vendor/split-text.js" strategy="lazyOnload" />
+        <Script src="/assets/js/vendor/split-text.js" strategy="beforeInteractive" />
         <Script src="/assets/js/vendor/split-type.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/wow.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/text-plugin.js" strategy="lazyOnload" />

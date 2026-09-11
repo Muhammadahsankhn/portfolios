@@ -120,10 +120,10 @@ export default function PortfolioGallery() {
   const [layout, setLayout] = useState<Layout>("compact");
 
   const layoutButtonClass = (buttonLayout: Layout) =>
-    `grid h-[34px] w-[38px] cursor-pointer place-items-center rounded-[7px] border-0 p-2 transition-colors ${
+    `portfolio-layout-button grid h-[34px] w-[38px] cursor-pointer place-items-center rounded-[7px] border-0 p-2 ${
       layout === buttonLayout
-        ? "bg-[#07111f] text-white"
-        : "bg-transparent text-[#667085] hover:bg-[#07111f] hover:text-white"
+        ? "is-active"
+        : ""
     }`;
 
   const filteredProjects = useMemo(() => {

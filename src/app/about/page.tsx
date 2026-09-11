@@ -295,7 +295,7 @@ export default function Page() {
         <div class="container">
             <div class="section-inner square-dot">
                 <div class="left-text">
-                    <p>//WE’VE <br> TRUSTED BY</p>
+                    <p>WE’VE <br> TRUSTED BY</p>
                 </div>
                 <div class="right-marquee-area">
                     <div class="brand-inner">

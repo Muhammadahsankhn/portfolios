@@ -201,7 +201,7 @@ export default function Page() {
         <div class="container">
             <div class="section-inner square-dot">
                 <div class="left-text">
-                    <p>//WE’VE <br> TRUSTED BY</p>
+                    <p>WE’VE <br> TRUSTED BY</p>
                 </div>
                 <div class="right-marquee-area">
                     <div class="brand-inner">
@@ -309,7 +309,7 @@ export default function Page() {
                     </div>
                     <div class="right-area">
                         <div class="image-area about-team-photo-wrap">
-                            <img class="about-team-photo" src="/assets/images/about/business-team-strategy.jpg" width="1203" height="749" alt="Business team discussing strategy during a meeting">
+                            <img class="about-team-photo" src="/assets/images/about/business-team-strategy.webp" width="1203" height="749" loading="lazy" decoding="async" alt="Business team discussing strategy during a meeting">
                         </div>
                     </div>
                     <span class="square-shape top-left"></span>
@@ -347,11 +347,11 @@ export default function Page() {
                         <div class="home-portfolio-card-copy"><p>AI &amp; Business Automation</p><h3>Arcane AI Platform</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/24" target="_blank" rel="noopener noreferrer" aria-label="View Clandestine Healthcare full website preview">
-                        <div class="home-portfolio-image"><img src="/assets/images/working-process/24.jpg" alt="Clandestine Healthcare website mockup"></div>
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/24.webp" loading="lazy" decoding="async" alt="Clandestine Healthcare website mockup"></div>
                         <div class="home-portfolio-card-copy"><p>Healthcare</p><h3>Clandestine Healthcare</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/07" target="_blank" rel="noopener noreferrer" aria-label="View Havenly Properties full website preview">
-                        <div class="home-portfolio-image"><img src="/assets/images/working-process/07.jpg" alt="Havenly Properties website mockup"></div>
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/07.webp" loading="lazy" decoding="async" alt="Havenly Properties website mockup"></div>
                         <div class="home-portfolio-card-copy"><p>Real Estate</p><h3>Havenly Properties</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/01" target="_blank" rel="noopener noreferrer" aria-label="View Intelligent Business Solutions full website preview">
@@ -363,15 +363,15 @@ export default function Page() {
                         <div class="home-portfolio-card-copy"><p>Cybersecurity</p><h3>Cybrexis Security</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/03" target="_blank" rel="noopener noreferrer" aria-label="View Indiana Menswear full website preview">
-                        <div class="home-portfolio-image"><img src="/assets/images/working-process/03.jpg" alt="Indiana Menswear website mockup"></div>
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/03.webp" loading="lazy" decoding="async" alt="Indiana Menswear website mockup"></div>
                         <div class="home-portfolio-card-copy"><p>E-commerce</p><h3>Indiana Menswear</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/22" target="_blank" rel="noopener noreferrer" aria-label="View Classmont Academy full website preview">
-                        <div class="home-portfolio-image"><img src="/assets/images/working-process/22.jpg" alt="Classmont Academy website mockup"></div>
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/22.webp" loading="lazy" decoding="async" alt="Classmont Academy website mockup"></div>
                         <div class="home-portfolio-card-copy"><p>Education &amp; E-Learning</p><h3>Classmont Academy</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/12" target="_blank" rel="noopener noreferrer" aria-label="View Workflow Automation Platform full website preview">
-                        <div class="home-portfolio-image"><img src="/assets/images/working-process/12.jpg" alt="Workflow Automation Platform website mockup"></div>
+                        <div class="home-portfolio-image"><img src="/assets/images/working-process/12.webp" loading="lazy" decoding="async" alt="Workflow Automation Platform website mockup"></div>
                         <div class="home-portfolio-card-copy"><p>SaaS and Software</p><h3>Workflow Automation Platform</h3><span aria-hidden="true">&#8599;</span></div>
                     </a>
                     <a class="home-portfolio-card" href="/portfolio/21" target="_blank" rel="noopener noreferrer" aria-label="View Synaptic AI Systems full website preview">
@@ -780,7 +780,7 @@ export default function Page() {
                             <div class="working-process-wrapper">
                                 <div class="image-area">
                                     <a href="/portfolio/03" target="_blank" rel="noopener noreferrer" class="fullpage-mockup-link" aria-label="Open the full Indiana Menswear website preview in a new page">
-                                        <img src="/assets/images/working-process/03.jpg" alt="Indiana Menswear website displayed on a laptop">
+                                        <img src="/assets/images/working-process/03.webp" loading="lazy" decoding="async" alt="Indiana Menswear website displayed on a laptop">
                                     </a>
                                 </div>
                                 <div class="content-area">
@@ -795,7 +795,7 @@ export default function Page() {
                             <div class="working-process-wrapper">
                                 <div class="image-area">
                                     <a href="/portfolio/04" target="_blank" rel="noopener noreferrer" class="fullpage-mockup-link" aria-label="Open the full LuxaWatch website preview in a new page">
-                                        <img src="/assets/images/working-process/04.jpg" alt="LuxaWatch website displayed on a laptop">
+                                        <img src="/assets/images/working-process/04.webp" loading="lazy" decoding="async" alt="LuxaWatch website displayed on a laptop">
                                     </a>
                                 </div>
                                 <div class="content-area">
@@ -1449,6 +1449,11 @@ export default function Page() {
         <div class="container">
             <div class="section-inner">
                 <div class="left-content-area">
+                    <div class="contact-intro">
+                        <span>START A CONVERSATION</span>
+                        <h2>Let’s create something<br>remarkable together.</h2>
+                        <p>Tell us what you’re building and we’ll help shape the right digital solution for your goals.</p>
+                    </div>
                     <div class="get-in-touch">
                         <p class="sub-title">CONTACT</p>
                         <ul>
@@ -1473,33 +1478,34 @@ export default function Page() {
                 <div class="contact-form-area">
                     <form id="contact-form" action="/api/contact" method="POST">
                         <div class="single-input">
-                            <label for="name">/YOUR NAME</label>
+                            <label for="name">YOUR NAME</label>
                             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                         </div>
                         <div class="single-input">
-                            <label for="email">/YOUR E-MAIL</label>
+                            <label for="email">YOUR E-MAIL</label>
                             <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
                         </div>
                         <div class="single-input">
-                            <label for="contact-number">/CONTACT NUMBER</label>
-                            <input type="tel" id="contact-number" name="contact_number" placeholder="Enter your contact number" autoComplete="tel" required>
+                            <label for="contact-number">CONTACT NUMBER</label>
+                            <div class="phone-input-group">
+                                <input type="tel" id="contact-number" name="contact_number" placeholder="Enter your contact number" autoComplete="tel-national" inputMode="tel" required>
+                            </div>
                         </div>
                         <div class="single-input">
-                            <label for="category">/CHOOSE A CATEGORY</label>
-                            <select id="category" name="category" required defaultValue="">
-                                <option value="" disabled>Select a project category</option>
-                                <option value="Mobile Application">Mobile Application</option>
-                                <option value="Video Production">Video Production</option>
-                                <option value="Design &amp; Branding">Design &amp; Branding</option>
-                                <option value="Ecommerce">Ecommerce</option>
-                                <option value="Website Development">Website Development</option>
-                                <option value="Software Development">Software Development</option>
-                                <option value="AI &amp; Automation">AI &amp; Automation</option>
-                                <option value="Other">Other</option>
-                            </select>
+                            <label>CHOOSE A CATEGORY</label>
+                            <div class="category-options" role="radiogroup" aria-label="Choose a project category">
+                                <label><input type="radio" name="category" value="Mobile Application" required checked><span>Mobile Application</span></label>
+                                <label><input type="radio" name="category" value="Video Production"><span>Video Production</span></label>
+                                <label><input type="radio" name="category" value="Design &amp; Branding"><span>Design &amp; Branding</span></label>
+                                <label><input type="radio" name="category" value="Ecommerce"><span>Ecommerce</span></label>
+                                <label><input type="radio" name="category" value="Website Development"><span>Website Development</span></label>
+                                <label><input type="radio" name="category" value="Software Development"><span>Software Development</span></label>
+                                <label><input type="radio" name="category" value="AI &amp; Automation"><span>AI &amp; Automation</span></label>
+                                <label><input type="radio" name="category" value="Other"><span>Other</span></label>
+                            </div>
                         </div>
                         <div class="single-input">
-                            <label for="message">/MORE ABOUT THE PROJECT</label>
+                            <label for="message">MORE ABOUT THE PROJECT</label>
                             <textarea id="message" name="message" placeholder="Leave us message" required></textarea>
                         </div>
                         <div class="form-btn-area">

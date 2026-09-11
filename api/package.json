@@ -1,0 +1,16 @@
+{
+  "name": "digicarehouse-contact-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone contact-form API for cPanel Node.js hosting",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "nodemailer": "^10.0.3"
+  }
+}
